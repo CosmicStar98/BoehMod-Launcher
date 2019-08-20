@@ -1,11 +1,11 @@
 {
-  "name": "electronlauncher",
-  "version": "1.6.0",
-  "productName": "Electron Launcher",
+  "name": "cclauncher",
+  "version": "1.0.0",
+  "productName": "CounterCraft Launcher",
   "description": "Modded Minecraft Launcher",
-  "author": "Daniel Scalzi (https://github.com/dscalzi/)",
+  "author": "JacksonPlayz (https://github.com/JacksonPlayz), Daniel Scalzi (https://github.com/dscalzi/)",
   "license": "UNLICENSED",
-  "homepage": "https://github.com/dscalzi/ElectronLauncher",
+  "homepage": "https://mccountercraft.net",
   "bugs": {
     "url": "https://github.com/dscalzi/ElectronLauncher/issues"
   },
@@ -47,6 +47,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dscalzi/ElectronLauncher.git"
+    "url": "git+https://github.com/JacksonPlayz/CC-Launcher.git"
   }
 }

@@ -18,10 +18,10 @@ function getCurrentPlatform(){
 builder.build({
     targets: (process.argv[2] != null && Platform[process.argv[2]] != null ? Platform[process.argv[2]] : getCurrentPlatform()).createTarget(),
     config: {
-        appId: 'electronlauncher',
-        productName: 'Electron Launcher',
+        appId: 'cclauncher',
+        productName: 'CounterCraft Launcher',
         artifactName: '${productName}.${ext}',
-        copyright: 'Copyright © 2018-2019 Daniel Scalzi',
+        copyright: 'Copyright © 2019 BoehMod',
         directories: {
             buildResources: 'build',
             output: 'dist'
