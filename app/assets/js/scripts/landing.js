@@ -453,11 +453,23 @@ function asyncSystemScan(mcVersion, launchAfter = true){
 // Keep reference to Minecraft Process
 let proc
 // Is DiscordRPC enabled
-let hasRPC = false
+let hasRPC = true
 // Joined server regex
 const SERVER_JOINED_REGEX = /\[.+\]: \[CHAT\] [a-zA-Z0-9_]{1,16} joined the game/
-const GAME_JOINED_REGEX = /\[.+\]: Skipping bad option: lastServer:/
-const GAME_LAUNCH_REGEX = /^\[.+\]: MinecraftForge .+ Initialized$/
+const SERVER_LEFT_REGEX = /^\[.+\]: Reached end of stream for localhost/
+const GAME_JOINED_REGEX = /\[.+\]: OpenAL initialized./
+const GAME_LAUNCH_REGEX = /^\[.+\]: Forge Mod Loader version 6.4.50.1,345 for Minecraft 1.6.4 loading/
+const GAMEMODE_INF_REGEX = /\[.+\]: \[CHAT\] Game >>               Welcome [a-zA-Z0-9_]{1,16} to [a-zA-Z0-9_]{1,16} Infected/
+const GAMEMODE_CAS_REGEX = /\[.+\]: \[CHAT\] Game >>               Welcome [a-zA-Z0-9_]{1,16} to [a-zA-Z0-9_]{1,16} Casual/
+const GAMEMODE_DOM_REGEX = /\[.+\]: \[CHAT\] Game >>               Welcome [a-zA-Z0-9_]{1,16} to [a-zA-Z0-9_]{1,16} Domination/
+const GAMEMODE_TDM_REGEX = /\[.+\]: \[CHAT\] Game >>               Welcome [a-zA-Z0-9_]{1,16} to [a-zA-Z0-9_]{1,16} Team Deathmatch/
+const GAMEMODE_COMP_REGEX = /\[.+\]: \[CHAT\] Game >>               Welcome [a-zA-Z0-9_]{1,16} to [a-zA-Z0-9_]{1,16} Competetive/
+const TEAM_RED_REGEX =/\[.+\]: \[CHAT\] Game >>                     Assigned to team Red/
+const TEAM_BLUE_REGEX= /\[.+\]: \[CHAT\] Game >>                     Assigned to team Blue/
+const SERVER_US_REGEX = /\[.+\]: \[CHAT\] Game >>             This Server is hosted in the US Region/
+const SERVER_EU_REGEX = /\[.+\]: \[CHAT\] Game >>             This Server is hosted in the EU Region/
+const SERVER_BR_REGEX = /\[.+\]: \[CHAT\] Game >>             This Server is hosted in the BR Region/
+
 
 let aEx
 let serv

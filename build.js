@@ -41,8 +41,8 @@ builder.build({
             allowElevation: true,
             installerIcon: 'build/icon.ico',
             uninstallerIcon: 'build/icon.ico',
-            installerSidebar: 'build/installer-sidebar.png',
-            uninstallerSidebar: 'build/installer-sidebar.png',
+            installerSidebar: 'build/installer-sidebar.bmp',
+            uninstallerSidebar: 'build/installer-sidebar.bmp',
             allowToChangeInstallationDirectory: true
         },
         mac: {
