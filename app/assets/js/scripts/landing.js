@@ -455,27 +455,29 @@ let proc
 // Is DiscordRPC enabled
 let hasRPC = true
 // Joined server regex
-const SERVER_JOINED_REGEX = /\[.+\]: \[CHAT\] [a-zA-Z0-9_]{1,16} joined the game/
-const SERVER_LEFT_REGEX = /^\[.+\]: Reached end of stream for localhost/
-const GAME_JOINED_REGEX = /\[.+\]: OpenAL initialized./
-const GAME_LAUNCH_REGEX = /^\[.+\]: Forge Mod Loader version 6.4.50.1,345 for Minecraft 1.6.4 loading/
-const GAMEMODE_INF_REGEX = /\[.+\]: \[CHAT\] Game >>               Welcome [a-zA-Z0-9_]{1,16} to [a-zA-Z0-9_]{1,16} Infected/
-const GAMEMODE_CAS_REGEX = /\[.+\]: \[CHAT\] Game >>               Welcome [a-zA-Z0-9_]{1,16} to [a-zA-Z0-9_]{1,16} Casual/
-const GAMEMODE_DOM_REGEX = /\[.+\]: \[CHAT\] Game >>               Welcome [a-zA-Z0-9_]{1,16} to [a-zA-Z0-9_]{1,16} Domination/
-const GAMEMODE_TDM_REGEX = /\[.+\]: \[CHAT\] Game >>               Welcome [a-zA-Z0-9_]{1,16} to [a-zA-Z0-9_]{1,16} Team Deathmatch/
-const GAMEMODE_COMP_REGEX = /\[.+\]: \[CHAT\] Game >>               Welcome [a-zA-Z0-9_]{1,16} to [a-zA-Z0-9_]{1,16} Competetive/
-const TEAM_RED_REGEX =/\[.+\]: \[CHAT\] Game >>                     Assigned to team Red/
-const TEAM_BLUE_REGEX= /\[.+\]: \[CHAT\] Game >>                     Assigned to team Blue/
-const SERVER_US_REGEX = /\[.+\]: \[CHAT\] Game >>             This Server is hosted in the US Region/
-const SERVER_EU_REGEX = /\[.+\]: \[CHAT\] Game >>             This Server is hosted in the EU Region/
-const SERVER_BR_REGEX = /\[.+\]: \[CHAT\] Game >>             This Server is hosted in the BR Region/
+const SERVER_JOINED_REGEX = /[CHAT\] [a-zA-Z0-9_]{1,16} joined the game/
+const SERVER_LEFT_REGEX = /Reached end of stream for localhost/
+const GAME_JOINED_REGEX = /OpenAL initialized./
+const GAME_LAUNCH_REGEX = /Forge Mod Loader version 6.4.50.1,345 for Minecraft 1.6.4 loading/
+const GAMEMODE_INF_REGEX = /\[CHAT\] Game >>               Welcome [a-zA-Z0-9_]{1,16} to [a-zA-Z0-9_]{1,16} Infected/
+const GAMEMODE_CAS_REGEX = / \[CHAT\] Game >>               Welcome [a-zA-Z0-9_]{1,16} to [a-zA-Z0-9_]{1,16} Casual/
+const GAMEMODE_DOM_REGEX = /\[CHAT\] Game >>               Welcome [a-zA-Z0-9_]{1,16} to [a-zA-Z0-9_]{1,16} Domination/
+const GAMEMODE_TDM_REGEX = /\[CHAT\] Game >>               Welcome [a-zA-Z0-9_]{1,16} to [a-zA-Z0-9_]{1,16} Team Deathmatch/
+const GAMEMODE_COMP_REGEX = /\[CHAT\] Game >>               Welcome [a-zA-Z0-9_]{1,16} to [a-zA-Z0-9_]{1,16} Competetive/
+const TEAM_RED_REGEX =/\[CHAT\] Game >>                     Assigned to team Red/
+const TEAM_BLUE_REGEX= /\[CHAT\] Game >>                     Assigned to team Blue/
+const SERVER_US_REGEX = /\[CHAT\] Game >>             This Server is hosted in the US Region/
+const SERVER_EU_REGEX = /\[CHAT\] Game >>             This Server is hosted in the EU Region/
+const SERVER_BR_REGEX = /\[CHAT\] Game >>             This Server is hosted in the BR Region/
 
+let server
+let gamemode
+let team
 
 let aEx
 let serv
 let versionData
 let forgeData
-
 let progressListener
 
 function dlAsync(login = true){
@@ -657,7 +659,7 @@ function dlAsync(login = true){
                     if(GAME_LAUNCH_REGEX.test(data.trim())){
                         toggleLaunchArea(false)
                         if(hasRPC){
-                            DiscordWrapper.updateDetails('Loading game..')
+                            DiscordWrapper.updateDetails('Launching Game')
                         }
                         proc.stdout.on('data', gameStateChange)
                         proc.stdout.removeListener('data', tempListener)
@@ -668,10 +670,49 @@ function dlAsync(login = true){
                 // Listener for Discord RPC.
                 const gameStateChange = function(data){
                     data = data.trim()
-                    if(SERVER_JOINED_REGEX.test(data)){
-                        DiscordWrapper.updateDetails('Playing CounterCraft.')
-                    } else if(GAME_JOINED_REGEX.test(data)){
-                        DiscordWrapper.updateDetails('Exploring the menus.')
+                    if(GAME_LAUNCH_REGEX.test(data)) {
+                        DiscordWrapper.updateState('Lauching Game')
+                        DiscordWrapper.updateSmallImage(null, null)
+                    } else if(GAME_JOINED_REGEX.test(data) || SERVER_LEFT_REGEX.test(data)) {
+                        DiscordWrapper.updateState('Main Menu - CounterCraft')
+                        DiscordWrapper.updateSmallImage(null, null)
+                    } else if(SERVER_JOINED_REGEX.test(data))
+                        DiscordWrapper.updateState('Playing Game - CounterCraft')
+                        DiscordWrapper.updateSmallImage(null, null)
+
+
+                    // Team Selector
+                    if(TEAM_BLUE_REGEX.test(data)) {
+                        team = "Blue"
+                    } else if(TEAM_RED_REGEX.test(data)) {
+                        team = "Red"
+                    }
+
+                    // Server Selector
+                    if(SERVER_BR_REGEX.test(data)) {
+                        server = "BR"
+                    } else if(SERVER_US_REGEX.test(data)) {
+                        server = "US"
+                    } else if(SERVER_EU_REGEX.test(data)) {
+                        server = "EU"
+                    }
+
+                    // Gamemode Selector / DRP Setter
+                    if(GAMEMODE_CAS_REGEX.test(data)){
+                        DiscordWrapper.updateState('Playing Casual - ' + team + ' Team')
+                        DiscordWrapper.updateSmallImage('cas', 'Casual (' + server + ')')
+                    } else if(GAMEMODE_INF_REGEX.test(data)){
+                        DiscordWrapper.updateState('Playing Infected - ' + team + ' Team')
+                        DiscordWrapper.updateSmallImage('inf', 'Infected (' + server + ')')
+                    } else if(GAMEMODE_DOM_REGEX.test(data)){
+                        DiscordWrapper.updateState('Playing Domination - ' + team + ' Team')
+                        DiscordWrapper.updateSmallImage('dom', 'Domination (' + server + ')')
+                    } else if(GAMEMODE_TDM_REGEX.test(data)){
+                        DiscordWrapper.updateState('Playing TDM - ' + team + ' Team')
+                        DiscordWrapper.updateSmallImage('tdm', 'TDM (' + server + ')')
+                    } else if(GAMEMODE_COMP_REGEX.test(data)){
+                        DiscordWrapper.updateState('Playing Competitive - ' + team + ' Team')
+                        DiscordWrapper.updateSmallImage('cbd', 'Competitive (' + server + ')')
                     }
                 }
 

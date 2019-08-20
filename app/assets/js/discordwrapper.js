@@ -6,16 +6,16 @@ const {Client} = require('discord-rpc')
 let client
 let activity
 
-exports.initRPC = function(genSettings, servSettings, initialDetails = 'Waiting for Client..'){
+exports.initRPC = function(genSettings, servSettings, initialDetails = 'Unofficial Minecraft FPS'){
     client = new Client({ transport: 'ipc' })
 
     activity = {
         details: initialDetails,
-        state: 'Server: ' + servSettings.shortId,
-        largeImageKey: servSettings.largeImageKey,
-        largeImageText: servSettings.largeImageText,
-        smallImageKey: genSettings.smallImageKey,
-        smallImageText: genSettings.smallImageText,
+        state: 'Waiting for Client',
+        largeImageKey: 'cc-round',
+        largeImageText: 'CounterCraft (MC 1.6.4)',
+        smallImageKey: null,
+        smallImageText: null,
         startTimestamp: new Date().getTime(),
         instance: false
     }
@@ -36,6 +36,23 @@ exports.initRPC = function(genSettings, servSettings, initialDetails = 'Waiting 
 
 exports.updateDetails = function(details){
     activity.details = details
+    client.setActivity(activity)
+}
+
+exports.updateState = function(state){
+    activity.state = state
+    client.setActivity(activity)
+}
+
+exports.updateSmallImage = function(smallImageKey, smallImageText) {
+    activity.smallImageKey = smallImageKey
+    activity.smallImageText = smallImageText
+    client.setActivity(activity)
+}
+
+exports.updateLargeImage = function(largeImageKey, largeImageText) {
+    activity.largeImageKey = largeImageKey
+    activity.largeImageText = largeImageText
     client.setActivity(activity)
 }
 
