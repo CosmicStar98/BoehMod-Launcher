@@ -33,8 +33,7 @@ builder.build({
                     arch: 'x64'
                 }
             ],
-            icon: 'build/icon.ico',
-            installerSidebar: 'build/installer-sidebar.png'
+            icon: 'build/icon.ico'
         },
         nsis: {
             oneClick: false,
@@ -42,18 +41,32 @@ builder.build({
             allowElevation: true,
             installerIcon: 'build/icon.ico',
             uninstallerIcon: 'build/icon.ico',
+            installerSidebar: 'build/installer-sidebar.png',
+            uninstallerSidebar: 'build/installer-sidebar.png',
             allowToChangeInstallationDirectory: true
         },
         mac: {
             target: [
-                'dmg',
-                'zip'
+                'dmg'
             ],
             category: 'public.app-category.games',
             icon: 'build/icon.icns'
         },
         dmg: {
-            icon: 'build/disk.icns'
+            icon: 'build/disk.icns',
+            background: 'build/dmg-background.png',
+            contents: [
+                {
+                    x: 151,
+                    y: 179
+                },
+                {
+                    x: 446,
+                    y: 179,
+                    type: 'link',
+                    path: '/Applications'
+                }
+            ]
         },
         linux: {
             target: 'AppImage',
