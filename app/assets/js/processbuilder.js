@@ -515,6 +515,13 @@ class ProcessBuilder {
             }
         }
 
+        // 1.6.4 user session fix
+        mcArgs.push('--session')
+        mcArgs.push('token:' + this.authUser.accessToken + ':' + this.authUser.uuid.trim())
+
+        mcArgs.push('--username')
+        mcArgs.push(this.authUser.displayName.trim())
+
         // Autoconnect to the selected server.
         if(ConfigManager.getAutoConnect() && this.server.isAutoConnect()){
             const serverURL = new URL('my://' + this.server.getAddress())
@@ -537,7 +544,7 @@ class ProcessBuilder {
             mcArgs.push(ConfigManager.getGameHeight())
         }
         
-        // Mod List File Argument
+        // Mod List File Argument - Deprecated
         mcArgs.push('--modListFile')
         mcArgs.push('absolute:' + this.fmlDir)
 

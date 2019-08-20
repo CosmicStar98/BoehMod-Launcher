@@ -1332,10 +1332,10 @@ class AssetGuard extends EventEmitter {
         const self = this
         return new Promise(async (resolve, reject) => {
             await self.validateClient(versionData)
-            await self.validateLogConfig(versionData)
+            // await self.validateLogConfig(versionData)
             resolve()
         })
-    }
+    } 
 
     /**
      * Validate client file - artifact renamed from client.jar to '{version}'.jar.
@@ -1362,7 +1362,7 @@ class AssetGuard extends EventEmitter {
                 resolve()
             }
         })
-    }
+    } 
 
     /**
      * Validate log config.

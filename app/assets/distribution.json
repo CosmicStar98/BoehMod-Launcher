@@ -8,7 +8,7 @@
         "smallImageText": "CounterCraft",
         "smallImageKey": "cc-round"
     },
-    "rss": "https://raw.githubusercontent.com/ScottehBoeh/CounterCraft-Launcher/master/rss.xml",
+    "rss": "https://www.boehmod.com/forum/forums/news-announcements-changelogs.35/-/index.rss",
     "servers": [
         {
             "id": "cc",
