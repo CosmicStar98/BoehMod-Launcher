@@ -19,8 +19,8 @@ builder.build({
     targets: (process.argv[2] != null && Platform[process.argv[2]] != null ? Platform[process.argv[2]] : getCurrentPlatform()).createTarget(),
     config: {
         appId: 'cclauncher',
-        productName: 'CounterCraft Launcher',
-        artifactName: '${productName}.${ext}',
+        productName: 'CCLauncher',
+        artifactName: '${productName}-${version}.${ext}',
         copyright: 'Copyright © 2019 BoehMod',
         directories: {
             buildResources: 'build',
@@ -44,16 +44,22 @@ builder.build({
             allowToChangeInstallationDirectory: true
         },
         mac: {
-            target: 'dmg',
+            target: [
+                'dmg',
+                'zip'
+            ],
             category: 'public.app-category.games',
             icon: 'build/icon.icns'
         },
+        dmg: {
+            icon: 'build/disk.icns'
+        },
         linux: {
             target: 'AppImage',
-            maintainer: 'Daniel Scalzi',
-            vendor: 'Daniel Scalzi',
-            synopsis: 'Modded Minecraft Launcher',
-            description: 'Custom launcher which allows users to join modded servers. All mods, configurations, and updates are handled automatically.',
+            maintainer: 'JacksonPlayz, Daniel Scalzi',
+            vendor: 'BoehMod',
+            synopsis: 'Official CounterCraft Launcher',
+            description: 'Custom launcher which allows users to CounterCraft.',
             category: 'Game'
         },
         compression: 'maximum',
