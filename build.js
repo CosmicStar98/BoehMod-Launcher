@@ -19,7 +19,7 @@ builder.build({
     targets: (process.argv[2] != null && Platform[process.argv[2]] != null ? Platform[process.argv[2]] : getCurrentPlatform()).createTarget(),
     config: {
         appId: 'cclauncher',
-        productName: 'CCLauncher',
+        productName: 'CounterCraftLauncher',
         artifactName: '${productName}-${version}.${ext}',
         copyright: 'Copyright © 2019 BoehMod',
         directories: {
@@ -33,7 +33,8 @@ builder.build({
                     arch: 'x64'
                 }
             ],
-            icon: 'build/icon.ico'
+            icon: 'build/icon.ico',
+            installerSidebar: 'build/installer-sidebar.png'
         },
         nsis: {
             oneClick: false,
