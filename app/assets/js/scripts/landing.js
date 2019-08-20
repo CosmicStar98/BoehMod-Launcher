@@ -7,7 +7,7 @@ const crypto                  = require('crypto')
 const {URL}                   = require('url')
 
 // Internal Requirements
-const DiscordWrapper          = require('./assets/js/discordwrapper')
+// const DiscordWrapper          = require('./assets/js/discordwrapper')
 const Mojang                  = require('./assets/js/mojang')
 const ProcessBuilder          = require('./assets/js/processbuilder')
 const ServerStatus            = require('./assets/js/serverstatus')
@@ -453,7 +453,7 @@ function asyncSystemScan(mcVersion, launchAfter = true){
 // Keep reference to Minecraft Process
 let proc
 // Is DiscordRPC enabled
-let hasRPC = false
+// let hasRPC = false
 // Joined server regex
 const SERVER_JOINED_REGEX = /\[.+\]: \[CHAT\] [a-zA-Z0-9_]{1,16} joined the game/
 const GAME_JOINED_REGEX = /\[.+\]: Skipping bad option: lastServer:/
@@ -644,9 +644,9 @@ function dlAsync(login = true){
                 const tempListener = function(data){
                     if(GAME_LAUNCH_REGEX.test(data.trim())){
                         toggleLaunchArea(false)
-                        if(hasRPC){
+                        /*if(hasRPC){
                             DiscordWrapper.updateDetails('Loading game..')
-                        }
+                        }*/
                         proc.stdout.on('data', gameStateChange)
                         proc.stdout.removeListener('data', tempListener)
                         proc.stderr.removeListener('data', gameErrorListener)
@@ -654,14 +654,14 @@ function dlAsync(login = true){
                 }
 
                 // Listener for Discord RPC.
-                const gameStateChange = function(data){
+                /* const gameStateChange = function(data){
                     data = data.trim()
                     if(SERVER_JOINED_REGEX.test(data)){
                         DiscordWrapper.updateDetails('Playing CounterCraft.')
                     } else if(GAME_JOINED_REGEX.test(data)){
                         DiscordWrapper.updateDetails('Exploring the menus.')
                     }
-                }
+                } */
 
                 const gameErrorListener = function(data){
                     data = data.trim()
@@ -683,7 +683,7 @@ function dlAsync(login = true){
                     toggleLaunchArea(false)
 
                     // Init Discord Hook
-                    const distro = DistroManager.getDistribution()
+                   /* const distro = DistroManager.getDistribution()
                     if(distro.discord != null && serv.discord != null){
                         DiscordWrapper.initRPC(distro.discord, serv.discord)
                         hasRPC = true
@@ -693,7 +693,7 @@ function dlAsync(login = true){
                             hasRPC = false
                             proc = null
                         })
-                    }
+                    } */
 
                 } catch(err) {
 
