@@ -18,6 +18,11 @@
             "version": "1.5.5a",
             "address": "www.mccountercraft.net",
             "minecraftVersion": "1.6.4",
+            "discord": {
+                "shortId": "CounterCraft",
+                "largeImageText": "CounterCraft (MC 1.6.4)",
+                "largeImageKey": "cc-round"
+            },
             "mainServer": true,
             "autoconnect": false,
             "modules": [

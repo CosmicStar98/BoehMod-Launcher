@@ -8,7 +8,6 @@ let activity
 
 exports.initRPC = function(genSettings, servSettings, initialDetails = 'Waiting for Client..'){
     client = new Client({ transport: 'ipc' })
-    logger.log('Loading DiscordRPC')
 
     activity = {
         details: initialDetails,
