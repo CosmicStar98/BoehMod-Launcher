@@ -78,7 +78,7 @@ body, button {
 /* Flexbox to wrap the main frame content. */
 #frameMain {
     display: flex;
-    height: 20px
+    height: 10px
 }
 
 /* Undraggable region on the left and right of the frame. */
