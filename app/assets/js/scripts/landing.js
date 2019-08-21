@@ -453,10 +453,10 @@ function asyncSystemScan(mcVersion, launchAfter = true){
 // Keep reference to Minecraft Process
 let proc
 // Is DiscordRPC enabled
-let hasRPC = false
+let hasRPC = true
 // Joined server regex
 const SERVER_JOINED_REGEX = /^\[.+\] \[CHAT\] [a-zA-Z0-9_]{1,16} joined the game/
-const SERVER_LEFT_REGEX = /^\[.+\] Reached end of stream for/
+const SERVER_LEFT_REGEX = /^\[.+\] Reached end of stream for localhost/
 const GAME_JOINED_REGEX = /^\[.+\] OpenAL initialized./
 const GAME_LAUNCH_REGEX = /^\[.+\] Forge Mod Loader version 6.4.50.1,345 for Minecraft 1.6.4 loading/
 const GAMEMODE_INF_REGEX = /^\[.+\] \[CHAT\] Game >>               Welcome [a-zA-Z0-9_]{1,16} to [a-zA-Z0-9_]{1,16} Infected/
@@ -671,13 +671,16 @@ function dlAsync(login = true){
                 const gameStateChange = function(data){
                     data = data.trim()
                     if(GAME_LAUNCH_REGEX.test(data)) {
-                        DiscordWrapper.updateDetails('Lauching Game')
+                        DiscordWrapper.updateState('Lauching Game')
+                        DiscordWrapper.updateSmallImage('null', 'null')
                         logger.log('Server Joined')
                     } else if(GAME_JOINED_REGEX.test(data) || SERVER_LEFT_REGEX.test(data)) {
-                        DiscordWrapper.updateDetails('Main Menu - CounterCraft')
+                        DiscordWrapper.updateState('Main Menu - CounterCraft')
+                        DiscordWrapper.updateSmallImage('null', 'null')
                         logger.log('Server Joined')
                     } else if(SERVER_JOINED_REGEX.test(data))
-                        DiscordWrapper.updateDetails('Playing Game - CounterCraft')
+                        DiscordWrapper.updateState('Playing Game - CounterCraft')
+                        DiscordWrapper.updateSmallImage('null', 'null')
                         logger.log('Server Joined')
 
 
