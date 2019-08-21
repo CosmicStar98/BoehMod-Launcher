@@ -7,7 +7,7 @@ const crypto                  = require('crypto')
 const {URL}                   = require('url')
 
 // Internal Requirements
-const DiscordWrapper          = require('./assets/js/discordwrapper')
+//const DiscordWrapper          = require('./assets/js/discordwrapper')
 const Mojang                  = require('./assets/js/mojang')
 const ProcessBuilder          = require('./assets/js/processbuilder')
 const ServerStatus            = require('./assets/js/serverstatus')
@@ -453,9 +453,9 @@ function asyncSystemScan(mcVersion, launchAfter = true){
 // Keep reference to Minecraft Process
 let proc
 // Is DiscordRPC enabled
-let hasRPC = true
+// let hasRPC = true
 // Joined server regex
-const SERVER_JOINED_REGEX = /^\[.+\] \[CHAT\] [a-zA-Z0-9_]{1,16} joined the game/
+/* const SERVER_JOINED_REGEX = /^\[.+\] \[CHAT\] [a-zA-Z0-9_]{1,16} joined the game/
 const SERVER_LEFT_REGEX = /^\[.+\] Reached end of stream for localhost/
 const GAME_JOINED_REGEX = /^\[.+\] OpenAL initialized./
 const GAME_LAUNCH_REGEX = /^\[.+\] Forge Mod Loader version 6.4.50.1,345 for Minecraft 1.6.4 loading/
@@ -468,11 +468,11 @@ const TEAM_RED_REGEX =/^\[.+\] \[CHAT\] Game >>                     Assigned to 
 const TEAM_BLUE_REGEX= /^\[.+\] \[CHAT\] Game >>                     Assigned to team Blue/
 const SERVER_US_REGEX = /^\[.+\] \[CHAT\] Game >>             This Server is hosted in the US Region/
 const SERVER_EU_REGEX = /^\[.+\] \[CHAT\] Game >>             This Server is hosted in the EU Region/
-const SERVER_BR_REGEX = /^\[.+\] \[CHAT\] Game >>             This Server is hosted in the BR Region/
+const SERVER_BR_REGEX = /^\[.+\] \[CHAT\] Game >>             This Server is hosted in the BR Region/ */
 
-let server
+/*let server
 let gamemode
-let team
+let team*/
 
 let aEx
 let serv
@@ -658,9 +658,9 @@ function dlAsync(login = true){
                 const tempListener = function(data){
                     if(GAME_LAUNCH_REGEX.test(data.trim())){
                         toggleLaunchArea(false)
-                        if(hasRPC){
+                       /* if(hasRPC){
                             DiscordWrapper.updateDetails('Launching Game')
-                        }
+                        }*/
                         proc.stdout.on('data', gameStateChange)
                         proc.stdout.removeListener('data', tempListener)
                         proc.stderr.removeListener('data', gameErrorListener)
@@ -668,7 +668,7 @@ function dlAsync(login = true){
                 }
 
                 // Listener for Discord RPC.
-                const gameStateChange = function(data){
+                /* const gameStateChange = function(data){
                     data = data.trim()
                     if(GAME_LAUNCH_REGEX.test(data)) {
                         DiscordWrapper.updateState('Lauching Game')
@@ -727,7 +727,7 @@ function dlAsync(login = true){
                         DiscordWrapper.updateSmallImage('cbd', 'Competitive (' + server + ')')
                         logger.log('COMP')
                     }
-                }
+                } */
 
                 const gameErrorListener = function(data){
                     data = data.trim()
@@ -749,7 +749,7 @@ function dlAsync(login = true){
                     toggleLaunchArea(false)
 
                     // Init Discord Hook
-                    const distro = DistroManager.getDistribution()
+                   /* const distro = DistroManager.getDistribution()
                     if(distro.discord != null && serv.discord != null){
                         DiscordWrapper.initRPC(distro.discord, serv.discord)
                         hasRPC = true
@@ -759,7 +759,7 @@ function dlAsync(login = true){
                             hasRPC = false
                             proc = null
                         })
-                    }
+                    } */
 
                 } catch(err) {
 
