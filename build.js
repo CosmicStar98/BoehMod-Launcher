@@ -55,6 +55,7 @@ builder.build({
         dmg: {
             icon: 'build/disk.icns',
             background: 'build/dmg-background.png',
+            iconSize: 96,
             contents: [
                 {
                     x: 151,

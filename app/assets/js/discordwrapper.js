@@ -14,8 +14,8 @@ exports.initRPC = function(genSettings, servSettings, initialDetails = 'Unoffici
         state: 'Waiting for Client',
         largeImageKey: 'cc-round',
         largeImageText: 'CounterCraft (MC 1.6.4)',
-        smallImageKey: null,
-        smallImageText: null,
+        smallImageKey: 'null',
+        smallImageText: 'null',
         startTimestamp: new Date().getTime(),
         instance: false
     }
