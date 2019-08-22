@@ -1,11 +1,11 @@
 {
-  "name": "cclauncher",
+  "name": "boehmodlauncher",
   "version": "1.0.0",
-  "productName": "CounterCraft Launcher",
+  "productName": "BoehMod Launcher",
   "description": "Modded Minecraft Launcher",
   "author": "JacksonPlayz (https://github.com/JacksonPlayz), Daniel Scalzi (https://github.com/dscalzi/)",
   "license": "UNLICENSED",
-  "homepage": "https://mccountercraft.net",
+  "homepage": "https://boehmod.com",
   "bugs": {
     "url": "https://github.com/dscalzi/ElectronLauncher/issues"
   },

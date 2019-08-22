@@ -19,7 +19,7 @@ builder.build({
     targets: (process.argv[2] != null && Platform[process.argv[2]] != null ? Platform[process.argv[2]] : getCurrentPlatform()).createTarget(),
     config: {
         appId: 'cclauncher',
-        productName: 'CounterCraftLauncher',
+        productName: 'BoehMod Launcher',
         artifactName: '${productName}-${version}.${ext}',
         copyright: 'Copyright © 2019 BoehMod',
         directories: {
@@ -73,8 +73,8 @@ builder.build({
             target: 'AppImage',
             maintainer: 'JacksonPlayz, Daniel Scalzi',
             vendor: 'BoehMod',
-            synopsis: 'Official CounterCraft Launcher',
-            description: 'Custom launcher which allows users to CounterCraft.',
+            synopsis: 'Official BoehMod Launcher',
+            description: 'Custom launcher which allows users to play BoehMod mods.',
             category: 'Game'
         },
         compression: 'maximum',

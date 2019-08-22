@@ -3,26 +3,16 @@
     "java": {
         "oracle": "http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html"
     },
-    "discord": {
-        "clientId": "444253745380065290",
-        "smallImageText": "CounterCraft (MC 1.6.4)",
-        "smallImageKey": "cc-round"
-    },
-    "rss": "https://www.boehmod.com/forum/forums/news-announcements-changelogs.35/-/index.rss",
+    "rss": "https://www.boehmod.com/forum/ewr-porta/index.rss",
     "servers": [
         {
             "id": "cc",
-            "name": "Official CounterCraft",
+            "name": "CounterCraft",
             "description": "Official CounterCraft Matchmaking & Cloud",
             "icon": "https://www.mccountercraft.net/img/cclogosquare.png",
-            "version": "1.5.5a",
+            "version": "1.5.7a",
             "address": "www.mccountercraft.net",
             "minecraftVersion": "1.6.4",
-            "discord": {
-                "shortId": "CounterCraft",
-                "largeImageText": "CounterCraft (MC 1.6.4)",
-                "largeImageKey": "cc-round"
-            },
             "mainServer": true,
             "autoconnect": false,
             "modules": [
@@ -239,7 +229,236 @@
                         "size": 39498334,
                         "MD5": "8C29165D7134B0DCFEF93AA00D9527BD",
                         "path": "mods/CounterCraft.jar",
-                        "url": "https://github.com/ScottehBoeh/CounterCraftRelease/releases/download/1.5.6a/CounterCraft.jar"
+                        "url": "https://github.com/ScottehBoeh/CounterCraftRelease/releases/download/1.5.7a/CounterCraft.jar"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "deci",
+            "name": "Decimation",
+            "description": "Official Decimation Modpack",
+            "icon": "https://cdn.discordapp.com/emojis/604026546025660436.png?v=1",
+            "version": "1.18.8f",
+            "address": "www.mcdecimation.net",
+            "minecraftVersion": "1.7.10",
+            "mainServer": false,
+            "autoconnect": false,
+            "modules": [
+                {
+                    "id": "net.minecraftforge:forge:1.6.4-9.11.1.1345",
+                    "name": "Minecraft Forge",
+                    "type": "ForgeHosted",
+                    "artifact": {
+                        "size": 2014260,
+                        "MD5": "a4d84569831a19d562b690343634cbac",
+                        "url": "https://www.boehmod.com/download/launcher/forge-1.6.4-9.11.1.1345-universal.jar"
+                    },
+                    "subModules": [
+                        {
+                            "id": "net.minecraft:launchwrapper:1.8",
+                            "name": "Mojang (LaunchWrapper)",
+                            "type": "Library",
+                            "artifact": {
+                                "size": 28927,
+                                "MD5": "460ffeedae268dc70c8210ce179fa44a",
+                                "url": "http://www.boehmod.com/download/launcher/launchwrapper-1.8.jar"
+                            }
+                        },
+                        {
+                            "id": "org.ow2.asm:asm-all:5.0.3",
+                            "name": "Mojang (ASM)",
+                            "type": "Library",
+                            "artifact": {
+                                "size": 214592,
+                                "MD5": "d21c2a06a4e6b175aa01e328f38a1182",
+                                "url": "http://www.boehmod.com/download/launcher/asm-all-4.1.jar"
+                            }
+                        },
+                        {
+                            "id": "org.scala-lang:scala-library:2.10.2@jar.pack.xz",
+                            "name": "Minecraft Forge (scala-library)",
+                            "type": "Library",
+                            "artifact": {
+                                "size": 7218365,
+                                "MD5": "6113b66ce9c223edaa895aafa4a61139",
+                                "url": "http://www.boehmod.com/download/launcher/scala-library-2.10.2.jar"
+                            }
+                        },
+                        {
+                            "id": "org.scala-lang:scala-compiler:2.10.2@jar.pack.xz",
+                            "name": "Minecraft Forge (scala-compiler)",
+                            "type": "Library",
+                            "artifact": {
+                                "size": 14541830,
+                                "MD5": "9dbe26f8b0e3745d359e01720d789c8c",
+                                "url": "http://www.boehmod.com/download/launcher/scala-compiler-2.10.2.jar"
+                            }
+                        },
+                        {
+                            "id": "lzma:lzma:0.0.1",
+                            "name": "Mojang (LZMA)",
+                            "type": "Library",
+                            "artifact": {
+                                "size": 5762,
+                                "MD5": "a3e3c3186e41c4a1a3027ba2bb23cdc6",
+                                "url": "http://www.boehmod.com/download/launcher/lzma-0.0.1.jar"
+                            }
+                        },
+                        {
+                            "id": "net.sf.jopt-simple:jopt-simple:4.5",
+                            "name": "Mojang (Jopt Simple)",
+                            "type": "Library",
+                            "artifact": {
+                                "size": 61311,
+                                "MD5": "1372bd4823bb1ef61e7db6724f601150",
+                                "url": "http://www.boehmod.com/download/launcher/jopt-simple-4.5.jar"
+                            }
+                        },
+                        {
+                            "id": "com.paulscode:codecjorbis:20101023",
+                            "name": "Mojang (Jorbis Codec)",
+                            "type": "Library",
+                            "artifact": {
+                                "size": 103871,
+                                "MD5": "0d622e2ac4368b5a33d540a9e4819e0c",
+                                "url": "http://www.boehmod.com/download/launcher/codecjorbis-20101023.jar"
+                            }
+                        },
+                        {
+                            "id": "com.paulscode:codecwav:20101023",
+                            "name": "Mojang (Wav Codec)",
+                            "type": "Library",
+                            "artifact": {
+                                "size": 5618,
+                                "MD5": "f6a93b7eb8083e4ced92e7e253657057",
+                                "url": "http://www.boehmod.com/download/launcher/codecwav-20101023.jar"
+                            }
+                        },
+                        {
+                            "id": "com.paulscode:libraryjavasound:20101123",
+                            "name": "Mojang (Java Sound Library)",
+                            "type": "Library",
+                            "artifact": {
+                                "size": 21679,
+                                "MD5": "247b45f9d2f0071ad543c14d0ff31d5c",
+                                "url": "http://www.boehmod.com/download/launcher/libraryjavasound-20101123.jar"
+                            }
+                        },
+                        {
+                            "id": "com.paulscode:librarylwjglopenal:20100824",
+                            "name": "Mojang (Java LWJGL Library)",
+                            "type": "Library",
+                            "artifact": {
+                                "size": 18981,
+                                "MD5": "93730cef2e75762c5a1431c6d7a0c78e",
+                                "url": "http://www.boehmod.com/download/launcher/librarylwjglopenal-20100824.jar"
+                            }
+                        },
+                        {
+                            "id": "com.paulscode:soundsystem:20120107",
+                            "name": "Mojang (PaulsCode Sound System)",
+                            "type": "Library",
+                            "artifact": {
+                                "size": 65020,
+                                "MD5": "6d9d7d6c163caf74984465694d3566e7",
+                                "url": "http://www.boehmod.com/download/launcher/soundsystem-20120107.jar"
+                            }
+                        },
+                        {
+                            "id": "argo:argo:2.25_fixed",
+                            "name": "Mojang (Argo Fixed)",
+                            "type": "Library",
+                            "artifact": {
+                                "size": 74953,
+                                "MD5": "e9960995974979445b03bc644b9e9853",
+                                "url": "http://www.boehmod.com/download/launcher/argo-2.25_fixed.jar"
+                            }
+                        },
+                        {
+                            "id": "org.bouncycastle:bcprov-jdk15on:1.47",
+                            "name": "Mojang (BCPROV JDK)",
+                            "type": "Library",
+                            "artifact": {
+                                "size": 1997327,
+                                "MD5": "7749dd7eca4403fb968ddc484263736a",
+                                "url": "http://www.boehmod.com/download/launcher/bcprov-jdk15on-1.47.jar"
+                            }
+                        },
+                        {
+                            "id": "com.google.guava:guava:14.0",
+                            "name": "Mojang (Google Guava)",
+                            "type": "Library",
+                            "artifact": {
+                                "size": 2189111,
+                                "MD5": "484466295375582d0e32cc6efb42e4e6",
+                                "url": "http://www.boehmod.com/download/launcher/guava-14.0.jar"
+                            }
+                        },
+                        {
+                            "id": "org.apache.commons:commons-lang3:3.1",
+                            "name": "Mojang (Commons Lang)",
+                            "type": "Library",
+                            "artifact": {
+                                "size": 315805,
+                                "MD5": "71b48e6b3e1b1dc73fe705604b9c7584",
+                                "url": "http://www.boehmod.com/download/launcher/commons-lang3-3.1.jar"
+                            }
+                        },
+                        {
+                            "id": "commons-io:commons-io:2.4",
+                            "name": "Mojang (Commons IO)",
+                            "type": "Library",
+                            "artifact": {
+                                "size": 185140,
+                                "MD5": "7f97854dc04c119d461fed14f5d8bb96",
+                                "url": "http://www.boehmod.com/download/launcher/commons-io-2.4.jar"
+                            }
+                        },
+                        {
+                            "id": "net.java.jinput:jinput:2.0.5",
+                            "name": "Mojang (JInput)",
+                            "type": "Library",
+                            "artifact": {
+                                "size": 208338,
+                                "MD5": "cc07d371f79dc4ed2239e1101ae06313",
+                                "url": "http://www.boehmod.com/download/launcher/jinput-2.0.5.jar"
+                            }
+                        },
+                        {
+                            "id": "net.java.jutils:jutils:1.0.0",
+                            "name": "Mojang (JUtils)",
+                            "type": "Library",
+                            "artifact": {
+                                "size": 7508,
+                                "MD5": "f60976b19661c849c5c87433045a9885",
+                                "url": "http://www.boehmod.com/download/launcher/jutils-1.0.0.jar"
+                            }
+                        },
+                        {
+                            "id": "com.google.code.gson:gson:2.2.2",
+                            "name": "Mojang (Google GSON)",
+                            "type": "Library",
+                            "artifact": {
+                                "size": 189285,
+                                "MD5": "08cce0687047cc068b6f1bdd45b14cf4",
+                                "url": "http://www.boehmod.com/download/launcher/gson-2.2.2.jar"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "net.mcdecimation:Decimation:1.18.8f",
+                    "name": "Decimation Mod Jar",
+                    "type": "File",
+                    "required": {
+                        "value": true
+                    },
+                    "artifact": {
+                        "size": 149465839,
+                        "MD5": "7F108EB88B048D955B77B93845F65018",
+                        "path": "mods/Decimation.jar",
+                        "url": "https://github.com/ScottehBoeh/DecimationRelease/releases/download/1.18.8/Decimation.jar"
                     }
                 }
             ]
