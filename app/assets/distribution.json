@@ -219,15 +219,15 @@
                     ]
                 },
                 {
-                    "id": "com.ferullogaming:countercraft:1.5.6a",
+                    "id": "com.ferullogaming:countercraft:1.5.7a",
                     "name": "CounterCraft Mod Jar",
                     "type": "File",
                     "required": {
                         "value": true
                     },
                     "artifact": {
-                        "size": 39498334,
-                        "MD5": "8C29165D7134B0DCFEF93AA00D9527BD",
+                        "size": 38276829,
+                        "MD5": "74817C311CA58419734B3F926FE61447",
                         "path": "mods/CounterCraft.jar",
                         "url": "https://github.com/ScottehBoeh/CounterCraftRelease/releases/download/1.5.7a/CounterCraft.jar"
                     }
