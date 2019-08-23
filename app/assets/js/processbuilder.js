@@ -545,8 +545,8 @@ class ProcessBuilder {
         }
         
         // Mod List File Argument - Deprecated
-        mcArgs.push('--modListFile')
-        mcArgs.push('absolute:' + this.fmlDir)
+        // mcArgs.push('--modListFile')
+        // mcArgs.push('absolute:' + this.fmlDir)
 
         // LiteLoader
         if(this.usingLiteLoader){

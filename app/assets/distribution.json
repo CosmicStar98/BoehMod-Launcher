@@ -246,13 +246,13 @@
             "autoconnect": false,
             "modules": [
                 {
-                    "id": "net.minecraftforge:forge:1.7.10-10.13.4.1614-1.7.10",
+                    "id": "net.minecraftforge:forge:1.7.10-10.13.4.1566-1.7.10",
                     "name": "Minecraft Forge",
                     "type": "ForgeHosted",
                     "artifact": {
-                        "size": 3018833,
-                        "MD5": "ADD0FBA161C4652A96EFB4264EC2D9EC",
-                        "url": "https://www.boehmod.com/download/launcher/1.7.10/forge-1.7.10-10.13.4.1614-1.7.10.jar"
+                        "size": 3016182,
+                        "MD5": "7762BF0D21069F7D4E0220B8D294DAED",
+                        "url": "https://files.minecraftforge.net/maven/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forge-1.7.10-10.13.4.1566-1.7.10-universal.jar"
                     },
                     "subModules": [
                         {
