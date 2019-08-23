@@ -244,25 +244,25 @@
             "minecraftVersion": "1.7.10",
             "mainServer": false,
             "autoconnect": false,
-            "modules": [
+             "modules": [
                 {
                     "id": "net.minecraftforge:forge:1.7.10-10.13.4.1614-1.7.10",
                     "name": "Minecraft Forge",
                     "type": "ForgeHosted",
                     "artifact": {
                         "size": 3018833,
-                        "MD5": "ADD0FBA161C4652A96EFB4264EC2D9EC",
-                        "url": "https://www.boehmod.com/download/launcher/1.7.10/forge-1.7.10-10.13.4.1614-1.7.10-universal.jar"
+                        "MD5": "add0fba161c4652a96efb4264ec2d9ec",
+                        "url": "http://debans.net/files/1.7.10/forge-1.7.10-10.13.4.1614-1.7.10-universal.jar"
                     },
                     "subModules": [
-{
-                            "id": "net.minecraft:launchwrapper:1.12",
-                            "name": "Mojang (LaunchWrapper)",
+                        {
+                            "id": "com.typesafe.akka:akka-actor_2.11:2.3.3",
+                            "name": "Minecraft Forge (akka-actor)",
                             "type": "Library",
                             "artifact": {
-                                "size": 32999,
-                                "MD5": "934b2d91c7c5be4a49577c9e6b40e8da",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/launchwrapper-1.12.jar"
+                                "size": 2553197,
+                                "MD5": "72553b9b2c93cce5b6a0a02d4dce9ac5",
+                                "url": "http://debans.net/files/1.7.10/akka-actor_2.11-2.3.3.jar"
                             }
                         },
                         {
@@ -272,107 +272,57 @@
                             "artifact": {
                                 "size": 241639,
                                 "MD5": "c5cc4613bbdfba3ccf5f0ab85390d0b8",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/asm-all-5.0.3.jar"
+                                "url": "http://debans.net/files/1.7.10/asm-all-5.0.3.jar"
                             }
                         },
                         {
-                            "id": "org.scala-lang:scala-library:2.11.1@jar.pack.xz",
-                            "name": "Minecraft Forge (scala-library)",
+                            "id": "org.apache.commons:commons-lang3:3.3.2",
+                            "name": "Apache Commons Lang",
                             "type": "Library",
                             "artifact": {
-                                "size": 1474672,
-                                "MD5": "379c15c4f724421c6d5d7aecedaf87a6",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/scala-library-2.11.1.jar.pack.xz"
+                                "size": 412739,
+                                "MD5": "3128bf75a2549ebe38663401191bacab",
+                                "url": "http://debans.net/files/1.7.10/commons-lang3-3.3.2.jar"
                             }
                         },
                         {
-                            "id": "org.scala-lang:scala-compiler:2.11.1@jar.pack.xz",
-                            "name": "Minecraft Forge (scala-compiler)",
+                            "id": "com.typesafe:config:1.2.1",
+                            "name": "Minecraft Forge (typesafe-config)",
                             "type": "Library",
                             "artifact": {
-                                "size": 3076920,
-                                "MD5": "7d89e952f2d5c74577310cd2c28e3f20",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/scala-compiler-2.11.1.jar.pack.xz"
+                                "size": 221173,
+                                "MD5": "7ca00ee2dc5f594451bd5bf78330caeb",
+                                "url": "http://debans.net/files/1.7.10/config-1.2.1.jar"
                             }
                         },
                         {
-                            "id": "org.scala-lang:scala-actors-migration_2.11:1.1.0@jar.pack.xz",
-                            "name": "Minecraft Forge (scala-actors-migration)",
+                            "id": "com.google.guava:guava:17.0",
+                            "name": "Guava",
                             "type": "Library",
                             "artifact": {
-                                "size": 21324,
-                                "MD5": "04e3428b2600ace33c7ae2bf1f6c0a4c",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/scala-actors-migration_2.11-1.1.0.jar.pack.xz"
+                                "size": 2243036,
+                                "MD5": "89fef81c2adfa9b50a64ed5cd5d8c155",
+                                "url": "http://debans.net/files/1.7.10/guava-17.0.jar"
                             }
                         },
                         {
-                            "id": "org.scala-lang.plugins:scala-continuations-library_2.11:1.0.2@jar.pack.xz",
-                            "name": "Minecraft Forge (scala-continuations-library)",
+                            "id": "net.sf.jopt-simple:jopt-simple:4.5",
+                            "name": "Jopt-simple",
                             "type": "Library",
                             "artifact": {
-                                "size": 7956,
-                                "MD5": "ed9b1d27aba8ac4090a3749c4dfc895a",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/scala-continuations-library_2.11-1.0.2.jar.pack.xz"
+                                "size": 61311,
+                                "MD5": "1372bd4823bb1ef61e7db6724f601150",
+                                "url": "http://debans.net/files/1.7.10/jopt-simple-4.5.jar"
                             }
                         },
                         {
-                            "id": "org.scala-lang.plugins:scala-continuations-plugin_2.11.1:1.0.2@jar.pack.xz",
-                            "name": "Minecraft Forge (scala-continuations-plugin)",
+                            "id": "net.minecraft:launchwrapper:1.12",
+                            "name": "Mojang (LaunchWrapper)",
                             "type": "Library",
                             "artifact": {
-                                "size": 46140,
-                                "MD5": "a8232db22a72a981de6b1399eb86dff7",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/scala-continuations-plugin_2.11.1-1.0.2.jar.pack.xz"
-                            }
-                        },
-                        {
-                            "id": "org.scala-lang:scala-parser-combinators_2.11:1.0.1@jar.pack.xz",
-                            "name": "Minecraft Forge (scala-parser-combinators)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 85568,
-                                "MD5": "2e50a7df17680daadacca69f07f8a16d",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/scala-parser-combinators_2.11-1.0.1.jar.pack.xz"
-                            }
-                        },
-                        {
-                            "id": "org.scala-lang:scala-reflect:2.11.1@jar.pack.xz",
-                            "name": "Minecraft Forge (scala-reflect)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 1070312,
-                                "MD5": "84e5dc81c10e2bd74c579c9d0332fdd9",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/scala-reflect-2.11.1.jar.pack.xz"
-                            }
-                        },
-                        {
-                            "id": "org.scala-lang:scala-swing_2.11:1.0.1",
-                            "name": "Minecraft Forge (scala-swing)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 736795,
-                                "MD5": "1d360289e697022a3f57abaad344b28f",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/scala-swing_2.11-1.0.1.jar"
-                            }
-                        },
-                        {
-                            "id": "org.scala-lang:scala-xml_2.11:1.0.2@jar.pack.xz",
-                            "name": "Minecraft Forge (scala-xml)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 217812,
-                                "MD5": "cc891b094a4c32dedc56bfefe9b072ff",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/scala-xml_2.11-1.0.2.jar.pack.xz"
-                            }
-                        },
-                        {
-                            "id": "com.typesafe.akka:akka-actor_2.11:2.3.3@jar.pack.xz",
-                            "name": "Minecraft Forge (akka-actor)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 746612,
-                                "MD5": "25cb22c3078e9fb3f7a861c912924862",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/akka-actor_2.11-2.3.3.jar.pack.xz"
+                                "size": 32999,
+                                "MD5": "934b2d91c7c5be4a49577c9e6b40e8da",
+                                "url": "http://debans.net/files/1.7.10/launchwrapper-1.12.jar"
                             }
                         },
                         {
@@ -382,47 +332,97 @@
                             "artifact": {
                                 "size": 5762,
                                 "MD5": "a3e3c3186e41c4a1a3027ba2bb23cdc6",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/lzma-0.0.1.jar"
+                                "url": "http://debans.net/files/1.7.10/lzma-0.0.1.jar"
                             }
                         },
                         {
-                            "id": "com.typesafe:config:1.2.1@jar.pack.xz",
-                            "name": "Minecraft Forge (typesafe-config)",
+                            "id": "org.scala-lang:scala-actors-migration_2.11:1.1.0",
+                            "name": "Minecraft Forge (scala-actors-migration)",
                             "type": "Library",
                             "artifact": {
-                                "size": 56636,
-                                "MD5": "10ec4ccabc4e68aac9cf87165ead5d7d",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/config-1.2.1.jar.pack.xz"
+                                "size": 58767,
+                                "MD5": "7f7b169667d14b3092a285badf9487f7",
+                                "url": "http://debans.net/files/1.7.10/scala-actors-migration_2.11-1.1.0.jar"
                             }
                         },
                         {
-                            "id": "net.sf.jopt-simple:jopt-simple:4.5",
-                            "name": "Mojang (Jopt Simple)",
+                            "id": "org.scala-lang:scala-compiler:2.11.1",
+                            "name": "Minecraft Forge (scala-compiler)",
                             "type": "Library",
                             "artifact": {
-                                "size": 61311,
-                                "MD5": "1372BD4823BB1EF61E7DB6724F601150",
-                                "url": "http://www.boehmod.com/download/launcher/1.7.10/jopt-simple-4.5.jar"
+                                "size": 13576400,
+                                "MD5": "d9fc987043fcf8c25d0f73bc7ca36a47",
+                                "url": "http://debans.net/files/1.7.10/scala-compiler-2.11.1.jar"
                             }
                         },
                         {
-                            "id": "com.google.guava:guava:17.0",
-                            "name": "Mojang (Google Guava)",
+                            "id": "org.scala-lang.plugins:scala-continuations-library_2.11:1.0.2",
+                            "name": "Minecraft Forge (scala-continuations-library)",
                             "type": "Library",
                             "artifact": {
-                                "size": 2243036,
-                                "MD5": "89FEF81C2ADFA9B50A64ED5CD5D8C155",
-                                "url": "http://www.boehmod.com/download/launcher/1.7.10/guava-17.0.jar"
+                                "size": 26551,
+                                "MD5": "f2a6b8fb8451839efb670d03dfd79ebd",
+                                "url": "http://debans.net/files/1.7.10/scala-continuations-library_2.11-1.0.2.jar"
                             }
                         },
                         {
-                            "id": "org.apache.commons:commons-lang3:3.3.2",
-                            "name": "Mojang (Commons Lang)",
+                            "id": "org.scala-lang.plugins:scala-continuations-plugin_2.11.1:1.0.2",
+                            "name": "Minecraft Forge (scala-continuations-plugin)",
                             "type": "Library",
                             "artifact": {
-                                "size": 412739,
-                                "MD5": "3128BF75A2549EBE38663401191BACAB",
-                                "url": "http://www.boehmod.com/download/launcher/1.7.10/commons-lang3-3.3.2.jar"
+                                "size": 209882,
+                                "MD5": "40e725b6f9da3a52e6adffd94abb8290",
+                                "url": "http://debans.net/files/1.7.10/scala-continuations-plugin_2.11.1-1.0.2.jar"
+                            }
+                        },
+                        {
+                            "id": "org.scala-lang:scala-library:2.11.1",
+                            "name": "Minecraft Forge (scala-library)",
+                            "type": "Library",
+                            "artifact": {
+                                "size": 5612286,
+                                "MD5": "6f9208af82f7c2811a6c0de049cfe279",
+                                "url": "http://debans.net/files/1.7.10/scala-library-2.11.1.jar"
+                            }
+                        },
+                        {
+                            "id": "org.scala-lang:scala-parser-combinators_2.11:1.0.1",
+                            "name": "Minecraft Forge (scala-parser-combinators)",
+                            "type": "Library",
+                            "artifact": {
+                                "size": 430247,
+                                "MD5": "fe20384e064dd025e144bee2858abf1a",
+                                "url": "http://debans.net/files/1.7.10/scala-parser-combinators_2.11-1.0.1.jar"
+                            }
+                        },
+                        {
+                            "id": "org.scala-lang:scala-reflect:2.11.1",
+                            "name": "Minecraft Forge (scala-reflect)",
+                            "type": "Library",
+                            "artifact": {
+                                "size": 4415437,
+                                "MD5": "08b829b97a4258421b7e5c902b8a08ac",
+                                "url": "http://debans.net/files/1.7.10/scala-reflect-2.11.1.jar"
+                            }
+                        },
+                        {
+                            "id": "org.scala-lang:scala-swing_2.11:1.0.1",
+                            "name": "Minecraft Forge (scala-swing)",
+                            "type": "Library",
+                            "artifact": {
+                                "size": 736831,
+                                "MD5": "5d8c98094f1ae58184ed2e087fca7c44",
+                                "url": "http://debans.net/files/1.7.10/scala-swing_2.11-1.0.1.jar"
+                            }
+                        },
+                        {
+                            "id": "org.scala-lang:scala-xml_2.11:1.0.2",
+                            "name": "Minecraft Forge (scala-xml)",
+                            "type": "Library",
+                            "artifact": {
+                                "size": 660552,
+                                "MD5": "a54ca733ef0ede9c343f1ce9ed0b527c",
+                                "url": "http://debans.net/files/1.7.10/scala-xml_2.11-1.0.2.jar"
                             }
                         }
                     ]
