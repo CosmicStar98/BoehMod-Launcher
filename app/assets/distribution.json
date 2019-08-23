@@ -255,14 +255,14 @@
                         "url": "https://www.boehmod.com/download/launcher/1.7.10/forge-1.7.10-10.13.4.1614-1.7.10-universal.jar"
                     },
                     "subModules": [
-                        {
+{
                             "id": "net.minecraft:launchwrapper:1.12",
                             "name": "Mojang (LaunchWrapper)",
                             "type": "Library",
                             "artifact": {
                                 "size": 32999,
-                                "MD5": "934B2D91C7C5BE4A49577C9E6B40E8DA",
-                                "url": "http://www.boehmod.com/download/launcher/1.7.10/launchwrapper-1.12.jar"
+                                "MD5": "934b2d91c7c5be4a49577c9e6b40e8da",
+                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/launchwrapper-1.12.jar"
                             }
                         },
                         {
@@ -271,78 +271,78 @@
                             "type": "Library",
                             "artifact": {
                                 "size": 241639,
-                                "MD5": "C5CC4613BBDFBA3CCF5F0AB85390D0B8",
-                                "url": "http://www.boehmod.com/download/launcher/1.7.10/asm-all-5.0.3.jar"
+                                "MD5": "c5cc4613bbdfba3ccf5f0ab85390d0b8",
+                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/asm-all-5.0.3.jar"
                             }
                         },
                         {
-                            "id": "org.scala-lang:scala-library:2.11.1",
+                            "id": "org.scala-lang:scala-library:2.11.1@jar.pack.xz",
                             "name": "Minecraft Forge (scala-library)",
                             "type": "Library",
                             "artifact": {
-                                "size": 5612286,
-                                "MD5": "6F9208AF82F7C2811A6C0DE049CFE279",
-                                "url": "http://www.boehmod.com/download/launcher/1.7.10/scala-library-2.11.1.jar"
+                                "size": 1474672,
+                                "MD5": "379c15c4f724421c6d5d7aecedaf87a6",
+                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/scala-library-2.11.1.jar.pack.xz"
                             }
                         },
                         {
-                            "id": "org.scala-lang:scala-compiler:2.11.1",
+                            "id": "org.scala-lang:scala-compiler:2.11.1@jar.pack.xz",
                             "name": "Minecraft Forge (scala-compiler)",
                             "type": "Library",
                             "artifact": {
-                                "size": 13576400,
-                                "MD5": "D9FC987043FCF8C25D0F73BC7CA36A47",
-                                "url": "http://www.boehmod.com/download/launcher/1.7.10/scala-compiler-2.11.1.jar"
+                                "size": 3076920,
+                                "MD5": "7d89e952f2d5c74577310cd2c28e3f20",
+                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/scala-compiler-2.11.1.jar.pack.xz"
                             }
                         },
                         {
-                            "id": "org.scala-lang:scala-actors-migration_2.11:1.1.0",
+                            "id": "org.scala-lang:scala-actors-migration_2.11:1.1.0@jar.pack.xz",
                             "name": "Minecraft Forge (scala-actors-migration)",
                             "type": "Library",
                             "artifact": {
-                                "size": 58767,
-                                "MD5": "7F7B169667D14B3092A285BADF9487F7",
-                                "url": "http://www.boehmod.com/download/launcher/1.7.10/scala-actors-migration_2.11-1.1.0.jar"
+                                "size": 21324,
+                                "MD5": "04e3428b2600ace33c7ae2bf1f6c0a4c",
+                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/scala-actors-migration_2.11-1.1.0.jar.pack.xz"
                             }
                         },
                         {
-                            "id": "org.scala-lang:scala-continuations-library_2.11:1.0.2",
+                            "id": "org.scala-lang.plugins:scala-continuations-library_2.11:1.0.2@jar.pack.xz",
                             "name": "Minecraft Forge (scala-continuations-library)",
                             "type": "Library",
                             "artifact": {
-                                "size": 26551 ,
-                                "MD5": "6515CACAD64CD1ED19BD283B6EAFA640",
-                                "url": "http://www.boehmod.com/download/launcher/1.7.10/scala-continuations-library_2.11-1.0.2.jar"
+                                "size": 7956,
+                                "MD5": "ed9b1d27aba8ac4090a3749c4dfc895a",
+                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/scala-continuations-library_2.11-1.0.2.jar.pack.xz"
                             }
                         },
                         {
-                            "id": "org.scala-lang:scala-continuations-plugin_2.11.1:1.0.2",
+                            "id": "org.scala-lang.plugins:scala-continuations-plugin_2.11.1:1.0.2@jar.pack.xz",
                             "name": "Minecraft Forge (scala-continuations-plugin)",
                             "type": "Library",
                             "artifact": {
-                                "size": 209882,
-                                "MD5": "40E725B6F9DA3A52E6ADFFD94ABB8290",
-                                "url": "http://www.boehmod.com/download/launcher/1.7.10/scala-continuations-plugin_2.11.1-1.0.2.jar"
+                                "size": 46140,
+                                "MD5": "a8232db22a72a981de6b1399eb86dff7",
+                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/scala-continuations-plugin_2.11.1-1.0.2.jar.pack.xz"
                             }
                         },
                         {
-                            "id": "org.scala-lang:scala-parser-combinators_2.11:1.0.1",
+                            "id": "org.scala-lang:scala-parser-combinators_2.11:1.0.1@jar.pack.xz",
                             "name": "Minecraft Forge (scala-parser-combinators)",
                             "type": "Library",
                             "artifact": {
-                                "size": 430247,
-                                "MD5": "FE20384E064DD025E144BEE2858ABF1A",
-                                "url": "http://www.boehmod.com/download/launcher/1.7.10/scala-parser-combinators_2.11-1.0.1.jar"
+                                "size": 85568,
+                                "MD5": "2e50a7df17680daadacca69f07f8a16d",
+                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/scala-parser-combinators_2.11-1.0.1.jar.pack.xz"
                             }
                         },
                         {
-                            "id": "org.scala-lang:scala-reflect:2.11.1",
+                            "id": "org.scala-lang:scala-reflect:2.11.1@jar.pack.xz",
                             "name": "Minecraft Forge (scala-reflect)",
                             "type": "Library",
                             "artifact": {
-                                "size": 4415437,
-                                "MD5": "08B829B97A4258421B7E5C902B8A08AC",
-                                "url": "http://www.boehmod.com/download/launcher/1.7.10/scala-reflect-2.11.1.jar"
+                                "size": 1070312,
+                                "MD5": "84e5dc81c10e2bd74c579c9d0332fdd9",
+                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/scala-reflect-2.11.1.jar.pack.xz"
                             }
                         },
                         {
@@ -350,19 +350,29 @@
                             "name": "Minecraft Forge (scala-swing)",
                             "type": "Library",
                             "artifact": {
-                                "size": 736831,
-                                "MD5": "5D8C98094F1AE58184ED2E087FCA7C44",
-                                "url": "http://www.boehmod.com/download/launcher/1.7.10/scala-swing_2.11-1.0.1.jar"
+                                "size": 736795,
+                                "MD5": "1d360289e697022a3f57abaad344b28f",
+                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/scala-swing_2.11-1.0.1.jar"
                             }
                         },
                         {
-                            "id": "org.scala-lang:scala-xml_2.11:1.0.2",
+                            "id": "org.scala-lang:scala-xml_2.11:1.0.2@jar.pack.xz",
                             "name": "Minecraft Forge (scala-xml)",
                             "type": "Library",
                             "artifact": {
-                                "size": 660552,
-                                "MD5": "A54CA733EF0EDE9C343F1CE9ED0B527C",
-                                "url": "http://www.boehmod.com/download/launcher/1.7.10/scala-xml_2.11-1.0.2.jar"
+                                "size": 217812,
+                                "MD5": "cc891b094a4c32dedc56bfefe9b072ff",
+                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/scala-xml_2.11-1.0.2.jar.pack.xz"
+                            }
+                        },
+                        {
+                            "id": "com.typesafe.akka:akka-actor_2.11:2.3.3@jar.pack.xz",
+                            "name": "Minecraft Forge (akka-actor)",
+                            "type": "Library",
+                            "artifact": {
+                                "size": 746612,
+                                "MD5": "25cb22c3078e9fb3f7a861c912924862",
+                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/akka-actor_2.11-2.3.3.jar.pack.xz"
                             }
                         },
                         {
@@ -371,8 +381,18 @@
                             "type": "Library",
                             "artifact": {
                                 "size": 5762,
-                                "MD5": "A3E3C3186E41C4A1A3027BA2BB23CDC6",
-                                "url": "http://www.boehmod.com/download/launcher/1.7.10/lzma-0.0.1.jar"
+                                "MD5": "a3e3c3186e41c4a1a3027ba2bb23cdc6",
+                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/lzma-0.0.1.jar"
+                            }
+                        },
+                        {
+                            "id": "com.typesafe:config:1.2.1@jar.pack.xz",
+                            "name": "Minecraft Forge (typesafe-config)",
+                            "type": "Library",
+                            "artifact": {
+                                "size": 56636,
+                                "MD5": "10ec4ccabc4e68aac9cf87165ead5d7d",
+                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/config-1.2.1.jar.pack.xz"
                             }
                         },
                         {
@@ -393,26 +413,6 @@
                                 "size": 2243036,
                                 "MD5": "89FEF81C2ADFA9B50A64ED5CD5D8C155",
                                 "url": "http://www.boehmod.com/download/launcher/1.7.10/guava-17.0.jar"
-                            }
-                        },
-                        {
-                            "id": "com.typesafe:config:1.2.1",
-                            "name": "MinecraftForge (typesafe-config)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 221173,
-                                "MD5": "992248074F0D2DF7CF97FA3C6529AE35",
-                                "url": "http://www.boehmod.com/download/launcher/1.7.10/config-1.2.1.jar"
-                            }
-                        },
-                        {
-                            "id": "org.apache.commons:akka-actor_2.11:2.3.3",
-                            "name": "Minecraft Forge (akka-actor)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 2553197,
-                                "MD5": "71b48e6b3e1b1dc73fe705604b9c7584",
-                                "url": "http://www.boehmod.com/download/launcher/1.7.10/akka-actor_2.11-2.3.3.jar"
                             }
                         },
                         {
