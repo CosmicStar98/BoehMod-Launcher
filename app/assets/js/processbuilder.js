@@ -43,12 +43,12 @@ class ProcessBuilder {
         const modObj = this.resolveModConfiguration(ConfigManager.getModConfiguration(this.server.getID()).mods, this.server.getModules())
         
         // Mod list below 1.13
-        if(!Util.mcVersionAtLeast('1.13', this.server.getMinecraftVersion())){
+        /*if(!Util.mcVersionAtLeast('1.13', this.server.getMinecraftVersion())){
             this.constructModList('forge', modObj.fMods, true)
             if(this.usingLiteLoader){
                 this.constructModList('liteloader', modObj.lMods, true)
             }
-        }
+        }*/
         
         const uberModArr = modObj.fMods.concat(modObj.lMods)
         let args = this.constructJVMArguments(uberModArr, tempNativePath)
@@ -217,7 +217,7 @@ class ProcessBuilder {
      * @param {Array.<Object>} mods An array of mods to add to the mod list.
      * @param {boolean} save Optional. Whether or not we should save the mod list file.
      */
-    constructModList(type, mods, save = false){
+    /*constructModList(type, mods, save = false){
         const modList = {
             repositoryRoot: ((type === 'forge' && this._requiresAbsolute()) ? 'absolute:' : '') + path.join(this.commonDir, 'modstore')
         }
@@ -240,7 +240,7 @@ class ProcessBuilder {
         }
 
         return modList
-    }
+    }*/
 
     /**
      * Construct the mod argument list for forge 1.13
