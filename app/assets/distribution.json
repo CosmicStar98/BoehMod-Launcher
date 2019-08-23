@@ -386,13 +386,13 @@
                             }
                         },
                         {
-                            "id": "com.google.guava:guava:15.0",
+                            "id": "com.google.guava:guava:17.0",
                             "name": "Mojang (Google Guava)",
                             "type": "Library",
                             "artifact": {
-                                "size": 2172168,
-                                "MD5": "2C10BB2CA3AC8B55B0E77E54A7EB3744",
-                                "url": "http://www.boehmod.com/download/launcher/1.7.10/guava-15.0.jar"
+                                "size": 2243036,
+                                "MD5": "89FEF81C2ADFA9B50A64ED5CD5D8C155",
+                                "url": "http://www.boehmod.com/download/launcher/1.7.10/guava-17.0.jar"
                             }
                         },
                         {
