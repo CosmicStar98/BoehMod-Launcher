@@ -386,16 +386,6 @@
                             }
                         },
                         {
-                            "id": "com.google.guava:guava:17.0",
-                            "name": "Mojang (Google Guava)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 2243036,
-                                "MD5": "89FEF81C2ADFA9B50A64ED5CD5D8C155",
-                                "url": "http://www.boehmod.com/download/launcher/1.7.10/guava-17.0.jar"
-                            }
-                        },
-                        {
                             "id": "com.typesafe:config:1.2.1",
                             "name": "MinecraftForge (typesafe-config)",
                             "type": "Library",
