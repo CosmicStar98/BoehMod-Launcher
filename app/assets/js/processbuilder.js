@@ -522,6 +522,10 @@ class ProcessBuilder {
         mcArgs.push('--username')
         mcArgs.push(this.authUser.displayName.trim())
 
+        // 1.7.10 forge fix
+        mcArgs.push('--userProperties')
+		mcArgs.push('{}')
+
         // Autoconnect to the selected server.
         if(ConfigManager.getAutoConnect() && this.server.isAutoConnect()){
             const serverURL = new URL('my://' + this.server.getAddress())
