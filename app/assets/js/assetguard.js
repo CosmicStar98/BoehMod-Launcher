@@ -14,6 +14,9 @@ const zlib          = require('zlib')
 const ConfigManager = require('./configmanager')
 const DistroManager = require('./distromanager')
 const isDev         = require('./isdev')
+const LoggerUtil    = require('./loggerutil')
+
+const logger = LoggerUtil('%c[AssetGuard]', 'color: #003996; font-weight: bold')
 
 // Constants
 // const PLATFORM_MAP = {
