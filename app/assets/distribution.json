@@ -436,16 +436,6 @@
                             }
                           },
                           {
-                            "id": "com.google.guava:guava:16.0.1",
-                            "name": "Library (GUAVA)",
-                            "type": "Library",
-                            "artifact": {
-                              "size": 746612,
-                              "MD5": "25cb22c3078e9fb3f7a861c912924862",
-                              "url": "https://repo1.maven.org/maven2/com/google/guava/guava/16.0.1/guava-16.0.1.jar"
-                            }
-                          },
-                          {
                             "id": "com.commons-io:commons-io:2.4",
                             "name": "Library (Commons IO)",
                             "type": "Library",
