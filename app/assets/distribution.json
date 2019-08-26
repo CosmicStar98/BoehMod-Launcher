@@ -252,7 +252,7 @@
                     "artifact": {
                         "size": 3018833,
                         "MD5": "ADD0FBA161C4652A96EFB4264EC2D9EC",
-                        "url": "https://files.minecraftforge.net/maven/net/minecraftforge/forge/1.7.10-10.13.4.1614-1.7.10/forge-1.7.10-10.13.4.1614-1.7.10-universal.jar"
+                        "url": "https://www.boehmod.com/download/launcher/1.7.10/forge-1.7.10-10.13.4.1614-1.7.10-universal.jar"
                     },
                     "subModules": [
                         {
@@ -276,16 +276,6 @@
                             }
                         },
                         {
-                            "id": "com.google.guava:guava:17.0",
-                            "name": "Mojang (Google Guava)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 2243036,
-                                "MD5": "89FEF81C2ADFA9B50A64ED5CD5D8C155",
-                                "url": "http://www.boehmod.com/download/launcher/1.7.10/guava-17.0.jar"
-                            }
-                        },
-                        {
                             "id": "org.scala-lang:scala-library:2.11.1",
                             "name": "Minecraft Forge (scala-library)",
                             "type": "Library",
@@ -306,7 +296,7 @@
                             }
                         },
                         {
-                            "id": "org.scala-lang:scala-actors-migration_2.11:1.1.0",
+                            "id": "org.scala-lang:scala-actors-migration:2.11-1.1.0",
                             "name": "Minecraft Forge (scala-actors-migration)",
                             "type": "Library",
                             "artifact": {
@@ -316,7 +306,7 @@
                             }
                         },
                         {
-                            "id": "org.scala-lang:scala-continuations-library_2.11:1.0.2",
+                            "id": "org.scala-lang:scala-continuations-library:2.11.1-1.0.2",
                             "name": "Minecraft Forge (scala-continuations-library)",
                             "type": "Library",
                             "artifact": {
@@ -326,7 +316,7 @@
                             }
                         },
                         {
-                            "id": "org.scala-lang:scala-continuations-plugin_2.11.1:1.0.2",
+                            "id": "org.scala-lang:scala-continuations-plugin:2.11.1-1.0.2",
                             "name": "Minecraft Forge (scala-continuations-plugin)",
                             "type": "Library",
                             "artifact": {
@@ -336,7 +326,7 @@
                             }
                         },
                         {
-                            "id": "org.scala-lang:scala-parser-combinators_2.11:1.0.1",
+                            "id": "org.scala-lang:scala-parser-combinators:2.11-1.0.1",
                             "name": "Minecraft Forge (scala-parser-combinators)",
                             "type": "Library",
                             "artifact": {
@@ -356,7 +346,7 @@
                             }
                         },
                         {
-                            "id": "org.scala-lang:scala-swing_2.11:1.0.1",
+                            "id": "org.scala-lang:scala-swing:2.11-1.0.1",
                             "name": "Minecraft Forge (scala-swing)",
                             "type": "Library",
                             "artifact": {
@@ -366,7 +356,7 @@
                             }
                         },
                         {
-                            "id": "org.scala-lang:scala-xml_2.11:1.0.2",
+                            "id": "org.scala-lang:scala-xml:2.11-1.0.2",
                             "name": "Minecraft Forge (scala-xml)",
                             "type": "Library",
                             "artifact": {
@@ -396,6 +386,16 @@
                             }
                         },
                         {
+                            "id": "com.google.guava:guava:17.0",
+                            "name": "Mojang (Google Guava)",
+                            "type": "Library",
+                            "artifact": {
+                                "size": 2243036,
+                                "MD5": "89FEF81C2ADFA9B50A64ED5CD5D8C155",
+                                "url": "http://www.boehmod.com/download/launcher/1.7.10/guava-17.0.jar"
+                            }
+                        },
+                        {
                             "id": "com.typesafe:config:1.2.1",
                             "name": "MinecraftForge (typesafe-config)",
                             "type": "Library",
@@ -406,7 +406,7 @@
                             }
                         },
                         {
-                            "id": "org.apache.commons:akka-actor_2.11:2.3.3",
+                            "id": "org.apache.commons:akka-actor:2.11-2.3.3",
                             "name": "Minecraft Forge (akka-actor)",
                             "type": "Library",
                             "artifact": {
