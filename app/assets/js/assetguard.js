@@ -1166,12 +1166,10 @@ class AssetGuard extends EventEmitter {
                     const manifest = JSON.parse(body)
 
                     for(let v of manifest.versions){
-                        if (v.id === '1.7.10') {
-                            resolve('https://launchermeta.mojang.com/v1/packages/2e818dc89e364c7efcfa54bec7e873c5f00b3840/1.7.10.json')
-                        }
-                        else if(v.id === version){
+                        if (v.id === version) {
+                            // resolve('https://raw.githubusercontent.com/JacksonPlayz/CC-Launcher/master/app/assets/1.7.10.json')
                             resolve(v.url)
-                        }  
+                        }
                     }
 
                     resolve(null)

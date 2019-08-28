@@ -18,7 +18,7 @@ function getCurrentPlatform(){
 builder.build({
     targets: (process.argv[2] != null && Platform[process.argv[2]] != null ? Platform[process.argv[2]] : getCurrentPlatform()).createTarget(),
     config: {
-        appId: 'cclauncher',
+        appId: 'boehmodlauncher',
         productName: 'BoehMod Launcher',
         artifactName: '${productName}-${version}.${ext}',
         copyright: 'Copyright © 2019 BoehMod',
