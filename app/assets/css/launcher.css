@@ -112,6 +112,7 @@ body, button {
     align-items: center;
     position: relative;
 }
+
 #frameImage {
     height: 20px;
     padding-left: 10px
@@ -125,6 +126,7 @@ body, button {
     right: -2px;
     height: 22px;
 }
+
 #frameButtonDockWin > .frameButton:not(:first-child) {
     margin-left: -4px;
 }
@@ -145,13 +147,16 @@ body, button {
     width: 39px;
     cursor: pointer;
 }
+
 .frameButton:hover,
 .frameButton:focus {
     background: rgba(189, 189, 189, 0.43);
 }
+
 .frameButton:active {
     background: rgba(156, 156, 156, 0.43);
 }
+
 .frameButton:focus {
     outline: 0px;
 }
@@ -161,6 +166,7 @@ body, button {
 #frameButton_close:focus {
     background: rgba(255, 53, 53, 0.61) !important;
 }
+
 #frameButton_close:active {
     background: rgba(235, 0, 0, 0.61) !important;
 }
@@ -175,6 +181,7 @@ body, button {
     -webkit-app-region: no-drag !important;
     cursor: pointer;
 }
+
 .frameButtonDarwin:focus {
     outline: 0px;
 }
@@ -182,10 +189,12 @@ body, button {
 #frameButtonDarwin_close {
     background-color: #e74c32;
 }
+
 #frameButtonDarwin_close:hover,
 #frameButtonDarwin_close:focus {
     background-color: #FF9A8A;
 }
+
 #frameButtonDarwin_close:active {
     background-color: #ff8d7b;
 }
@@ -193,10 +202,12 @@ body, button {
 #frameButtonDarwin_minimize {
     background-color: #fed045;
 }
+
 #frameButtonDarwin_minimize:hover,
 #frameButtonDarwin_minimize:focus {
     background-color: #FFE9A9;
 }
+
 #frameButtonDarwin_minimize:active {
     background-color: #ffde7b;
 }
@@ -204,10 +215,12 @@ body, button {
 #frameButtonDarwin_restoredown {
     background-color: #96e734;
 }
+
 #frameButtonDarwin_restoredown:hover,
 #frameButtonDarwin_restoredown:focus {
     background-color: #D6FFA6;
 }
+
 #frameButtonDarwin_restoredown:active {
     background-color: #bfff76;
 }
@@ -324,19 +337,23 @@ body, button {
     margin-top: 5%;
     margin-bottom: -5%;
 }
+
 #welcomeButton:disabled {
     color: rgba(255, 255, 255, 0.75);
     pointer-events: none;
 }
+
 #welcomeButton:hover,
 #welcomeButton:focus {
     text-shadow: 0px 0px 20px #fff;
     outline: none;
 }
+
 #welcomeButton:active {
     color: #c7c7c7;
     text-shadow: 0px 0px 20px #c7c7c7;
 }
+
 #welcomeSVG {
     -webkit-transform: translate3d(0, 0, 0);
     overflow: visible;
@@ -346,16 +363,20 @@ body, button {
     width: 20px;
     height: 20px;
 }
+
 #welcomeButton:hover #welcomeSVG,
 #welcomeButton:focus #welcomeSVG {
     -webkit-filter: drop-shadow(0px 0px 2px #fff);
 }
+
 #welcomeButton:active #welcomeSVG .arrowLine {
     stroke: #c7c7c7;
 }
+
 #welcomeButton:active #welcomeSVG {
     -webkit-filter: drop-shadow(0px 0px 2px #c7c7c7);
 }
+
 #welcomeButton:disabled #welcomeSVG .arrowLine {
     stroke: rgba(255, 255, 255, 0.75);
 }
@@ -405,28 +426,34 @@ body, button {
     cursor: pointer;
     transition: 0.25s ease;
 }
+
 #loginCancelButton:hover #loginCancelIcon,
 #loginCancelButton:hover #loginCancelText,
 #loginCancelButton:focus #loginCancelIcon,
 #loginCancelButton:focus #loginCancelText {
     text-shadow: 0px 0px 20px white;
 }
+
 #loginCancelButton:hover #loginCancelIcon,
 #loginCancelButton:focus #loginCancelIcon {
     box-shadow: 0px 0px 20px white;
 }
+
 #loginCancelButton:active #loginCancelIcon,
 #loginCancelButton:active #loginCancelText {
     text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.75);
     color: rgba(255, 255, 255, 0.75);
     border-color: rgba(255, 255, 255, 0.75);
 }
+
 #loginCancelButton:active #loginCancelIcon {
     box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.75);
 }
+
 #loginCancelButton:disabled {
     pointer-events: none;
 }
+
 #loginCancelButton:disabled #loginCancelIcon,
 #loginCancelButton:disabled #loginCancelText {
     color: rgba(255, 255, 255, 0.75);
@@ -446,6 +473,7 @@ body, button {
     margin-bottom: 5px;
     transition: 0.25s ease;
 }
+
 /* Text for the login cancel button. */
 #loginCancelText {
     font-size: 15px;
@@ -477,11 +505,13 @@ body, button {
     text-decoration: none;
     transition: 0.25s ease;
 }
+
 #loginForm a:hover,
 #loginForm a:focus {
     color: #a2a2a2;
     outline: none;
 }
+
 #loginForm a:active {
     color: #8b8b8b;
 }
@@ -533,22 +563,22 @@ body, button {
 }
 
 .shake {
-    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
 }
 
 @keyframes shake {
     10%, 90% {
         transform: translate3d(-1px, 0, 0);
     }
-    
+
     20%, 80% {
         transform: translate3d(2px, 0, 0);
     }
-  
+
     30%, 50%, 70% {
         transform: translate3d(-4px, 0, 0);
     }
-  
+
     40%, 60% {
         transform: translate3d(4px, 0, 0);
     }
@@ -571,12 +601,15 @@ body, button {
     font-size: 10px;
     letter-spacing: 1px;
 }
+
 .loginField:focus {
     outline: none;
 }
+
 .loginField:disabled {
     color: rgba(255, 255, 255, 0.50);
 }
+
 .loginField::-webkit-input-placeholder {
     color: rgba(255, 255, 255, 0.75);
     font-size: 10px;
@@ -584,6 +617,7 @@ body, button {
     text-align: center;
     font-weight: bold;
 }
+
 .loginField:focus::-webkit-input-placeholder {
     color: transparent;
 }
@@ -619,22 +653,27 @@ body, button {
     right: -20px;
     transition: 0.5s ease;
 }
+
 #loginButton:disabled {
     color: rgba(255, 255, 255, 0.75);
     pointer-events: none;
 }
+
 #loginButton[loading] {
     color: #fff;
 }
+
 #loginButton:hover,
 #loginButton:focus {
     text-shadow: 0px 0px 20px #fff;
     outline: none;
 }
+
 #loginButton:active {
     color: #c7c7c7;
-    text-shadow:  0px 0px 20px #c7c7c7;
+    text-shadow: 0px 0px 20px #c7c7c7;
 }
+
 #loginSVG {
     -webkit-transform: translate3d(0, 0, 0);
     overflow: visible;
@@ -644,16 +683,20 @@ body, button {
     width: 20px;
     height: 20px;
 }
+
 #loginButton:hover #loginSVG,
 #loginButton:focus #loginSVG {
     -webkit-filter: drop-shadow(0px 0px 2px #fff);
 }
+
 #loginButton:active #loginSVG .arrowLine {
     stroke: #c7c7c7;
 }
+
 #loginButton:active #loginSVG {
     -webkit-filter: drop-shadow(0px 0px 2px #c7c7c7);
 }
+
 #loginButton:disabled #loginSVG .arrowLine {
     stroke: rgba(255, 255, 255, 0.75);
 }
@@ -667,6 +710,7 @@ body, button {
 #loginButton[loading] #loginSVG {
     display: none;
 }
+
 #loginButton[loading] .circle-loader,
 #loginButton #loginSVG {
     display: initial;
@@ -688,20 +732,24 @@ body, button {
     width: 16px;
     height: 16px;
 }
+
 .load-complete {
     animation: none;
     border-color: #ffffff;
     transition: border 500ms ease-out;
 }
+
 .checkmark {
     display: none;
 }
+
 .checkmark.draw:after {
     animation-duration: 800ms;
     animation-timing-function: ease;
     animation-name: checkmark;
     transform: scaleX(-1) rotate(135deg);
 }
+
 .checkmark:after {
     opacity: 1;
     height: 8px;
@@ -714,6 +762,7 @@ body, button {
     top: 8px;
     position: absolute;
 }
+
 @keyframes loader-spin {
     0% {
         transform: rotate(0deg);
@@ -722,6 +771,7 @@ body, button {
         transform: rotate(360deg);
     }
 }
+
 @keyframes checkmark {
     0% {
         height: 0;
@@ -744,7 +794,6 @@ body, button {
         opacity: 1;
     }
 }
-
 
 
 /*.spinningCircle {
@@ -822,30 +871,36 @@ body, button {
     background: none;
     transition: 0.25s ease;
 }
+
 /* On hover and focus, add a grey border color. */
 #checkmarkContainer:hover input ~ *,
 #checkmarkContainer input:focus ~ * {
     color: #a2a2a2;
     border-color: #a2a2a2;
 }
+
 /* On keydown, darken the checkbox a bit. */
 #checkmarkContainer input:active ~ *:not(#loginRememberText) {
     color: #8d8d8d;
     border-color: #8d8d8d;
 }
+
 #checkmarkContainer[disabled] {
     pointer-events: none;
 }
+
 /* For checked -> #checkmarkContainer input:checked ~ * */
 /* Create the checkmark/indicator (hidden when not checked). */
 .loginCheckmark:after {
     content: "";
     display: none;
 }
+
 /* Show the checkmark when checked. */
 #checkmarkContainer input:checked ~ .loginCheckmark:after {
     display: block;
 }
+
 /* Style the checkmark/indicator. */
 #checkmarkContainer .loginCheckmark:after {
     position: absolute;
@@ -896,6 +951,7 @@ body, button {
     opacity: 0;
     transition: opacity 0.25s ease;
 }
+
 #settingsContainer[scrolled]:before {
     opacity: 1;
 }
@@ -921,6 +977,7 @@ body, button {
     display: flex;
     justify-content: center;
 }
+
 #settingsNavHeaderText {
     font-size: 20px;
 }
@@ -953,11 +1010,13 @@ body, button {
     outline: none;
     transition: 0.25s ease;
 }
+
 .settingsNavItem:hover,
 .settingsNavItem:focus {
     color: #c1c1c1;
     text-shadow: 0px 0px 20px #c1c1c1;
 }
+
 .settingsNavItem[selected] {
     cursor: default;
     color: white;
@@ -996,14 +1055,17 @@ body, button {
     outline: none;
     transition: 0.25s ease;
 }
+
 #settingsNavDone:hover,
 #settingsNavDone:focus {
     text-shadow: 0px 0px 20px white, 0px 0px 20px white, 0px 0px 20px white;
 }
+
 #settingsNavDone:active {
     text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.75), 0px 0px 20px rgba(255, 255, 255, 0.75), 0px 0px 20px rgba(255, 255, 255, 0.75);
     color: rgba(255, 255, 255, 0.75);
 }
+
 #settingsNavDone:disabled {
     color: rgba(255, 255, 255, 0.75);
     pointer-events: none;
@@ -1022,12 +1084,15 @@ body, button {
     height: 100%;
     overflow-y: auto;
 }
+
 .settingsTab::-webkit-scrollbar {
     width: 2px;
 }
+
 .settingsTab::-webkit-scrollbar-track {
     display: none;
 }
+
 .settingsTab::-webkit-scrollbar-thumb {
     border-radius: 10px;
     box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.50);
@@ -1049,10 +1114,12 @@ body, button {
     flex-direction: column;
     margin-bottom: 20px;
 }
+
 .settingsTabHeaderText {
     font-size: 20px;
     font-family: 'Avenir Medium';
 }
+
 .settingsTabHeaderDesc {
     font-size: 12px;
 }
@@ -1072,11 +1139,13 @@ body, button {
     font-family: 'Avenir Book';
     transition: 0.25s ease;
 }
+
 #settingsContainer input[type=number]:focus,
 #settingsContainer input[type=text]:focus {
     outline: none;
     border-color: rgba(126, 126, 126, 0.87);
 }
+
 #settingsContainer input[type=number][error] {
     border-color: rgb(255, 27, 12);
     background: rgba(236, 0, 0, 0.25);
@@ -1092,20 +1161,24 @@ body, button {
     width: 75%;
     border-bottom: 1px solid rgba(255, 255, 255, 0.50);
 }
+
 .settingsFieldLeft {
     display: flex;
     flex-direction: column;
 }
+
 .settingsFieldTitle {
     font-size: 14px;
     font-family: 'Avenir Medium';
     color: rgba(255, 255, 255, 0.95);
 }
+
 .settingsFieldDesc {
     font-size: 12px;
     color: rgba(255, 255, 255, .95);
     margin-top: 5px;
 }
+
 .settingsDivider {
     height: 1px;
     width: 75%;
@@ -1121,9 +1194,11 @@ body, button {
     border-radius: 50px;
     box-sizing: border-box;
 }
+
 .toggleSwitch input {
-    display:none;
+    display: none;
 }
+
 .toggleSwitchSlider {
     position: absolute;
     cursor: pointer;
@@ -1136,6 +1211,7 @@ body, button {
     border-radius: 50px;
     border: 1px solid rgba(126, 126, 126, 0.57);
 }
+
 .toggleSwitchSlider:before {
     position: absolute;
     content: "";
@@ -1148,11 +1224,13 @@ body, button {
     border-radius: 50px;
     transition: .4s;
 }
+
 input:checked + .toggleSwitchSlider {
     background-color: rgb(31, 140, 11);
     /* box-shadow: inset 2px 1px 20px black; */
     border: 1px solid rgb(31, 140, 11);
 }
+
 input:checked + .toggleSwitchSlider:before {
     transform: translateX(15px);
 }
@@ -1166,6 +1244,7 @@ input:checked + .toggleSwitchSlider:before {
     border-radius: 3px;
     position: relative;
 }
+
 .rangeSliderBar {
     position: absolute;
     background: #8be88b;
@@ -1174,6 +1253,7 @@ input:checked + .toggleSwitchSlider:before {
     border-radius: 3px 0px 0px 3px;
     transition: background 0.25s ease;
 }
+
 .rangeSliderTrack {
     position: absolute;
     top: -7.5px;
@@ -1217,6 +1297,7 @@ input:checked + .toggleSwitchSlider:before {
     padding: 5px;
     transition: 0.25s ease;
 }
+
 .settingsFileSelSVG {
     width: 20px;
     height: 20px;
@@ -1238,6 +1319,7 @@ input:checked + .toggleSwitchSlider:before {
     height: 0px;
     opacity: 0;
 }
+
 .settingsFileSelSel::-webkit-file-upload-button {
     display: none;
 }
@@ -1255,6 +1337,7 @@ input:checked + .toggleSwitchSlider:before {
     transition: 0.25s ease;
     white-space: nowrap;
 }
+
 .settingsFileSelLabel:hover,
 .settingsFileSelLabel:focus,
 .settingsFileSelSel:focus ~ #settingsJavaExecLabel {
@@ -1268,6 +1351,7 @@ input:checked + .toggleSwitchSlider:before {
     color: lightgrey;
     width: 89%;
 }
+
 .settingsFileSelDesc strong {
     font-family: 'Avenir Medium';
 }
@@ -1289,6 +1373,7 @@ input:checked + .toggleSwitchSlider:before {
     outline: none;
     transition: 0.25s ease;
 }
+
 #settingsAddAccount:hover,
 #settingsAddAccount:focus {
     background: rgba(54, 54, 54, 0.25);
@@ -1304,9 +1389,11 @@ input:checked + .toggleSwitchSlider:before {
 #settingsCurrentAccounts {
     margin-bottom: 5%;
 }
+
 #settingsCurrentAccounts > .settingsAuthAccount:not(:last-child) {
     margin-bottom: 10px;
 }
+
 #settingsCurrentAccounts > .settingsAuthAccount:not(:first-child) {
     margin-top: 10px;
 }
@@ -1344,6 +1431,7 @@ input:checked + .toggleSwitchSlider:before {
     margin-left: 20px;
     width: 100%;
 }
+
 .settingsAuthAccountDetails > *:not(:last-child) {
     margin-bottom: 20px;
 }
@@ -1353,12 +1441,14 @@ input:checked + .toggleSwitchSlider:before {
     display: flex;
     flex-direction: column;
 }
+
 .settingsAuthAccountDetailTitle {
     font-size: 12px;
     color: grey;
     font-weight: bold;
     font-family: 'Avenir Medium';
 }
+
 .settingsAuthAccountDetailValue {
     font-size: 14px;
     -webkit-user-select: initial;
@@ -1383,15 +1473,18 @@ input:checked + .toggleSwitchSlider:before {
     outline: none;
     transition: 0.25s ease;
 }
+
 .settingsAuthAccountSelect:hover:not([selected]),
 .settingsAuthAccountSelect:focus:not([selected]) {
     text-shadow: 0px 0px 20px white, 0px 0px 20px white;
     cursor: pointer;
 }
+
 .settingsAuthAccount:hover .settingsAuthAccountSelect:not([selected]),
 .settingsAuthAccountSelect[selected] {
     opacity: 1;
 }
+
 .settingsAuthAccountSelect[selected] {
     pointer-events: none;
 }
@@ -1409,17 +1502,20 @@ input:checked + .toggleSwitchSlider:before {
     cursor: pointer;
     outline: none;
 }
+
 .settingsAuthAccountLogOut:hover,
 .settingsAuthAccountLogOut:focus {
     box-shadow: 0px 0px 20px rgb(241, 55, 55);
     background: rgba(241, 55, 55, 0.25);
 }
+
 .settingsAuthAccountLogOut:active {
     box-shadow: 0px 0px 20px rgb(185, 47, 47);
     background: rgba(185, 47, 47, 0.25);
     border: 1px solid rgb(185, 47, 47);
     color: rgb(185, 47, 47);
 }
+
 .settingsAuthAccount:hover .settingsAuthAccountLogOut {
     opacity: 1;
 }
@@ -1436,15 +1532,18 @@ input:checked + .toggleSwitchSlider:before {
     border-bottom: 1px solid rgba(255, 255, 255, 0.50);
     width: 75%;
 }
+
 #settingsGameResolutionContent {
     display: flex;
     align-items: center;
     padding-top: 10px;
 }
+
 #settingsGameResolutionCross {
     color: grey;
     padding: 0px 15px;
 }
+
 #settingsGameWidth,
 #settingsGameHeight {
     padding: 7.5px 5px;
@@ -1493,17 +1592,20 @@ input:checked + .toggleSwitchSlider:before {
     cursor: pointer;
     outline: none;
 }
+
 #settingsSwitchServerButton:hover,
 #settingsSwitchServerButton:focus {
     box-shadow: 0px 0px 20px rgb(255, 255, 255);
     background: rgba(255, 255, 255, 0.25);
 }
+
 #settingsSwitchServerButton:active {
     box-shadow: 0px 0px 20px rgb(187, 187, 187);
     background: rgba(187, 187, 187, 0.25);
     border: 1px solid rgb(187, 187, 187);
     color: rgb(187, 187, 187);
 }
+
 #settingsSelServContainer:hover #settingsSwitchServerButton {
     opacity: 1;
 }
@@ -1542,6 +1644,7 @@ input:checked + .toggleSwitchSlider:before {
 .settingsDropinMod {
     padding: 10px;
 }
+
 .settingsSubMod {
     padding: 10px 0px 10px 15px;
     margin-left: 20px;
@@ -1604,9 +1707,11 @@ input:checked + .toggleSwitchSlider:before {
 .settingsSubModContainer > .settingsSubMod:first-child {
     border-top-left-radius: 10px;
 }
+
 .settingsSubModContainer > .settingsSubMod:last-child {
     border-bottom-left-radius: 10px;
 }
+
 .settingsSubModContainer > .settingsSubMod:only-child {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -1631,12 +1736,14 @@ input:checked + .toggleSwitchSlider:before {
     transition: 0.25s ease;
     margin-bottom: 10px;
 }
+
 #settingsDropinFileSystemButton:hover,
 #settingsDropinFileSystemButton:focus,
 #settingsDropinFileSystemButton[drag] {
     background: rgba(54, 54, 54, 0.25);
     text-shadow: 0px 0px 20px white;
 }
+
 /* Refresh instructions on the file system button. */
 #settingsDropinRefreshNote {
     font-size: 10px;
@@ -1656,10 +1763,12 @@ input:checked + .toggleSwitchSlider:before {
     outline: none;
     transition: 0.25s ease;
 }
+
 .settingsDropinRemoveButton:hover,
 .settingsDropinRemoveButton:focus {
     text-shadow: 0px 0px 20px #c32625, 0px 0px 20px #c32625, 0px 0px 20px #c32625;
 }
+
 .settingsDropinRemoveButton:active {
     color: #9b1f1f;
     text-shadow: 0px 0px 20px #9b1f1f, 0px 0px 20px #9b1f1f, 0px 0px 20px #9b1f1f;
@@ -1691,6 +1800,7 @@ input:checked + .toggleSwitchSlider:before {
     padding: 6px 11px;
     margin-right: 5px;
 }
+
 #settingsShaderpackButton:hover,
 #settingsShaderpackButton:focus,
 #settingsShaderpackButton[drag] {
@@ -1729,6 +1839,7 @@ input:checked + .toggleSwitchSlider:before {
     border-color: transparent transparent rgba(126, 126, 126, 0.57) transparent;
     top: 7px;
 }
+
 .settingsSelectSelected.select-arrow-active {
     border-radius: 3px 3px 0px 0px;
 }
@@ -1746,16 +1857,20 @@ input:checked + .toggleSwitchSlider:before {
     border-top: none;
     border-radius: 0px 0px 3px 3px;
 }
+
 /* Hide the items when the select box is closed. */
 .settingsSelectOptions[hidden] {
     display: none;
 }
+
 .settingsSelectOptions::-webkit-scrollbar {
     width: 2px;
 }
+
 .settingsSelectOptions::-webkit-scrollbar-track {
     display: none;
 }
+
 .settingsSelectOptions::-webkit-scrollbar-thumb {
     border-radius: 10px;
     box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.50);
@@ -1770,11 +1885,13 @@ input:checked + .toggleSwitchSlider:before {
     color: #ffffff;
     cursor: pointer;
 }
+
 .settingsSelectOptions div {
     border-width: 0px 0px 1px 0px;
     font-size: 12px;
     padding: 4px 16px;
 }
+
 .settingsSelectOptions div:last-child {
     border-bottom: none;
 }
@@ -1795,12 +1912,14 @@ input:checked + .toggleSwitchSlider:before {
     transition: 0.25s ease;
     outline: none;
 }
+
 #settingsTabJava a:hover,
 #settingsTabJava a:focus,
 .settingsChangelogText a:hover,
 .settingsChangelogText a:focus {
     color: rgba(255, 255, 255, 0.75);
 }
+
 #settingsTabJava a:active,
 .settingsChangelogText a:active {
     color: rgba(165, 165, 165, 0.75);
@@ -1828,9 +1947,11 @@ input:checked + .toggleSwitchSlider:before {
     justify-content: space-between;
     width: 100%;
 }
+
 #settingsMemoryContentLeft {
     width: 69%;
 }
+
 #settingsMemoryContentRight {
     display: flex;
     align-items: center;
@@ -1866,19 +1987,23 @@ input:checked + .toggleSwitchSlider:before {
     display: flex;
     flex-direction: column;
 }
-#settingsMemoryStatus > .settingsMemoryStatusContainer:not(:last-child){
+
+#settingsMemoryStatus > .settingsMemoryStatusContainer:not(:last-child) {
     margin-bottom: 50%;
 }
+
 .settingsMemoryStatusContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .settingsMemoryStatusTitle {
     font-size: 12px;
     color: grey;
     font-weight: bold;
 }
+
 .settingsMemoryStatusValue {
     color: lightgrey;
     font-size: 16px;
@@ -1922,6 +2047,7 @@ input:checked + .toggleSwitchSlider:before {
     padding: 5px 10px;
     font-size: 12px;
 }
+
 #settingsJVMOptsContent:focus-within > .settingsJavaIcon {
     background: rgba(126, 126, 126, 0.87);
 }
@@ -1973,11 +2099,13 @@ input:checked + .toggleSwitchSlider:before {
     padding-bottom: 5px;
     border-bottom: 1px solid rgba(126, 126, 126, 0.57);
 }
+
 #settingsAboutLogo {
     width: 30px;
     height: 30px;
     padding: 5px;
 }
+
 #settingsAboutTitle {
     font-size: 23px;
     padding-left: 10px;
@@ -2030,6 +2158,7 @@ input:checked + .toggleSwitchSlider:before {
     padding: 0px 15px;
     margin-bottom: 5px;
 }
+
 .settingsAboutButton {
     background: none;
     border: none;
@@ -2040,10 +2169,12 @@ input:checked + .toggleSwitchSlider:before {
     outline: none;
     text-decoration: none;
 }
+
 .settingsAboutButton:hover,
 .settingsAboutButton:focus {
     color: rgb(165, 165, 165);
 }
+
 .settingsAboutButton:active {
     color: rgba(124, 124, 124, 0.75);
 }
@@ -2072,6 +2203,7 @@ input:checked + .toggleSwitchSlider:before {
     margin-bottom: 10px;
     border-bottom: 1px solid rgba(126, 126, 126, 0.57);
 }
+
 /* Changelog header label. */
 .settingsChangelogLabel {
     font-size: 12px;
@@ -2089,12 +2221,14 @@ input:checked + .toggleSwitchSlider:before {
     margin-bottom: 16px;
     line-height: 1.5;
 }
+
 .settingsChangelogText blockquote {
     border-left: 0.25em solid rgba(126, 126, 126, 0.95);
     margin: 0px;
     padding: 0 0 0 1em;
     color: rgba(255, 255, 255, 0.85);
 }
+
 .settingsChangelogText code {
     padding: 0.1em 0.4em;
     font-size: 85%;
@@ -2103,18 +2237,22 @@ input:checked + .toggleSwitchSlider:before {
     border-radius: 3px;
     font-family: 'Avenir Book';
 }
-.settingsChangelogText li+li {
+
+.settingsChangelogText li + li {
     margin-top: .25em;
 }
+
 .settingsChangelogText a.commit-link {
     font-weight: 400;
     color: #ffffff;
     text-decoration: none;
 }
+
 .settingsChangelogText a.commit-link:hover {
     text-decoration: underline !important;
     text-decoration-color: black;
 }
+
 .settingsChangelogText tt {
     padding: 0.1em 0.4em;
     font-size: 86%;
@@ -2123,15 +2261,18 @@ input:checked + .toggleSwitchSlider:before {
     color: black;
     font-weight: bold;
 }
+
 .settingsChangelogText a.commit-link:hover tt {
     text-decoration: underline;
     text-decoration-color: black;
 }
+
 .settingsChangelogText .highlight {
     background: rgba(0, 0, 0, 0.30);
     user-select: initial;
     padding: 5px 10px;
 }
+
 .settingsChangelogText .highlight pre {
     margin: 0px;
 }
@@ -2175,6 +2316,7 @@ input:checked + .toggleSwitchSlider:before {
     padding-bottom: 5px;
     border-bottom: 1px solid rgba(126, 126, 126, 0.57);
 }
+
 #settingsUpdateTitle {
     font-size: 16px;
     padding-left: 10px;
@@ -2244,14 +2386,17 @@ input:checked + .toggleSwitchSlider:before {
     text-align: left;
     transition: 0.25s ease;
 }
+
 #settingsUpdateActionButton:hover,
 #settingsUpdateActionButton:focus {
     text-shadow: 0px 0px 20px white, 0px 0px 20px white, 0px 0px 20px white;
 }
+
 #settingsUpdateActionButton:active {
     text-shadow: 0px 0px 20px #c7c7c7, 0px 0px 20px #c7c7c7, 0px 0px 20px #c7c7c7;
     color: #c7c7c7;
 }
+
 #settingsUpdateActionButton:disabled {
     pointer-events: none;
 }
@@ -2278,17 +2423,20 @@ input:checked + .toggleSwitchSlider:before {
     height: 77%;
     display: flex;
 }
+
 #landingContainer > #upper > #left {
     display: inline-flex;
     width: 15%;
     height: 100%;
     justify-content: flex-end;
 }
+
 #landingContainer > #upper > #content {
     display: inline-flex;
     width: 70%;
     height: 100%;
 }
+
 #landingContainer > #upper > #right {
     display: inline-flex;
     width: 15%;
@@ -2301,6 +2449,7 @@ input:checked + .toggleSwitchSlider:before {
     display: flex;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
+
 #landingContainer > #lower > #left {
     position: relative;
     transition: top 2s ease;
@@ -2310,12 +2459,14 @@ input:checked + .toggleSwitchSlider:before {
     display: inline-flex;
     justify-content: center;
 }
+
 #landingContainer > #lower > #left #content {
     position: relative;
     top: 25px;
     display: inline-flex;
     line-height: 24px;
 }
+
 #landingContainer > #lower > #center {
     position: relative;
     transition: top 2s ease;
@@ -2325,12 +2476,14 @@ input:checked + .toggleSwitchSlider:before {
     display: inline-flex;
     justify-content: center;
 }
+
 #landingContainer > #lower > #center #content {
     position: relative;
     z-index: 500;
     transition: top 2s ease;
     top: 10px;
 }
+
 #landingContainer > #lower > #right {
     position: relative;
     transition: top 2s ease;
@@ -2377,6 +2530,7 @@ input:checked + .toggleSwitchSlider:before {
     opacity: 0;
     transition: opacity 0.25s ease;
 }
+
 #newsContent[scrolled]:before {
     opacity: 1;
 }
@@ -2416,10 +2570,12 @@ input:checked + .toggleSwitchSlider:before {
     outline: none;
     text-align: right;
 }
+
 #newsArticleTitle:hover,
 #newsArticleTitle:focus {
     text-shadow: 0px 0px 20px white;
 }
+
 #newsArticleTitle:active {
     color: #c7c7c7;
     text-shadow: 0px 0px 20px #c7c7c7;
@@ -2471,10 +2627,12 @@ input:checked + .toggleSwitchSlider:before {
     outline: none;
     text-align: right;
 }
+
 #newsArticleComments:focus,
 #newsArticleComments:hover {
     color: #e0e0e0;
 }
+
 #newsArticleComments:active {
     color: #c7c7c7;
 }
@@ -2493,34 +2651,42 @@ input:checked + .toggleSwitchSlider:before {
     height: 100%;
     padding: 0px 15px 0px 15px;
 }
+
 #newsArticleContentScrollable img,
 #newsArticleContentScrollable iframe {
     max-width: 95%;
     display: block;
     margin: 0 auto;
 }
+
 #newsArticleContentScrollable a {
     color: rgba(202, 202, 202, 0.75);
     transition: 0.25s ease;
     outline: none;
 }
+
 #newsArticleContentScrollable a:hover,
 #newsArticleContentScrollable a:focus {
     color: rgba(255, 255, 255, 0.75);
 }
+
 #newsArticleContentScrollable a:active {
     color: rgba(165, 165, 165, 0.75);
 }
+
 #newsArticleContentScrollable::-webkit-scrollbar {
     width: 2px;
 }
+
 #newsArticleContentScrollable::-webkit-scrollbar-track {
     display: none;
 }
+
 #newsArticleContentScrollable::-webkit-scrollbar-thumb {
     border-radius: 10px;
     box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.50);
 }
+
 .bbCodeSpoilerButton {
     background: none;
     border: none;
@@ -2532,14 +2698,17 @@ input:checked + .toggleSwitchSlider:before {
     border-bottom: 1px solid white;
     padding-bottom: 15px;
 }
+
 .bbCodeSpoilerButton:hover,
 .bbCodeSpoilerButton:focus {
     text-shadow: 0px 0px 20px #ffffff, 0px 0px 20px #ffffff, 0px 0px 20px #ffffff;
 }
+
 .bbCodeSpoilerButton:active {
     color: #c7c7c7;
     text-shadow: 0px 0px 20px #c7c7c7, 0px 0px 20px #c7c7c7, 0px 0px 20px #c7c7c7;
 }
+
 .bbCodeSpoilerText {
     display: none;
     padding: 15px 0px;
@@ -2587,28 +2756,34 @@ input:checked + .toggleSwitchSlider:before {
     height: 20px;
     cursor: pointer;
 }
+
 #newsNavigateLeft:hover #newsNavigationLeftSVG,
 #newsNavigateLeft:focus #newsNavigationLeftSVG,
 #newsNavigateRight:hover #newsNavigationRightSVG,
 #newsNavigateRight:focus #newsNavigationRightSVG {
     -webkit-filter: drop-shadow(0px 0px 2px #fff);
 }
+
 #newsNavigateLeft:active #newsNavigationLeftSVG .arrowLine,
 #newsNavigateRight:active #newsNavigationRightSVG .arrowLine {
     stroke: #c7c7c7;
 }
+
 #newsNavigateLeft:active #newsNavigationLeftSVG,
 #newsNavigateRight:active #newsNavigationRightSVG {
     -webkit-filter: drop-shadow(0px 0px 2px #c7c7c7);
 }
+
 #newsNavigateLeft:disabled #newsNavigationLeftSVG .arrowLine,
 #newsNavigateRight:disabled #newsNavigationRightSVG .arrowLine {
     stroke: rgba(255, 255, 255, 0.75);
 }
+
 #newsNavigationLeftSVG {
     transform: rotate(-90deg);
     width: 15px;
 }
+
 #newsNavigationRightSVG {
     transform: rotate(90deg);
     width: 15px;
@@ -2622,6 +2797,7 @@ input:checked + .toggleSwitchSlider:before {
     flex-direction: column;
     justify-content: center;
 }
+
 #newsErrorFailed {
     display: flex;
     align-items: center;
@@ -2633,13 +2809,16 @@ input:checked + .toggleSwitchSlider:before {
 .newsErrorContent {
     font-size: 20px;
 }
+
 #newsErrorLoading {
     display: flex;
     width: 168.92px;
 }
+
 #nELoadSpan {
     white-space: pre;
 }
+
 /* News error retry button styles. */
 #newsErrorRetry {
     font-size: 12px;
@@ -2650,10 +2829,12 @@ input:checked + .toggleSwitchSlider:before {
     outline: none;
     transition: 0.25s ease;
 }
+
 #newsErrorRetry:focus,
 #newsErrorRetry:hover {
     text-shadow: 0px 0px 20px white;
 }
+
 #newsErrorRetry:active {
     color: #c7c7c7;
     text-shadow: 0px 0px 20px #c7c7c7;
@@ -2688,9 +2869,10 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Logo container styles w/ update. */
-#image_seal_container[update]{
+#image_seal_container[update] {
     cursor: pointer
 }
+
 #image_seal_container[update]:before,
 #image_seal_container[update]:after {
     cursor: pointer;
@@ -2705,6 +2887,7 @@ input:checked + .toggleSwitchSlider:before {
     animation: glow-grow 4s ease-out infinite;
     background: rgba(0, 0, 0, 0.15);
 }
+
 #image_seal_container[update]:before {
     animation-delay: 2s;
 }
@@ -2729,6 +2912,7 @@ input:checked + .toggleSwitchSlider:before {
     font-size: 12px;
     transition: visibility 0s linear 0.25s, opacity 0.25s ease;
 }
+
 #updateAvailableTooltip::after {
     content: " ";
     position: absolute;
@@ -2739,6 +2923,7 @@ input:checked + .toggleSwitchSlider:before {
     border-style: solid;
     border-color: transparent transparent rgb(0, 0, 0) transparent;
 }
+
 #image_seal_container[update]:hover #updateAvailableTooltip {
     visibility: visible;
     opacity: 1;
@@ -2818,10 +3003,12 @@ input:checked + .toggleSwitchSlider:before {
     height: 100%;
     border-radius: 50%;
 }
+
 #avatarOverlay:hover,
 #avatarOverlay:focus {
     opacity: 1;
 }
+
 #avatarOverlay:active {
     background-color: rgba(0, 0, 0, 0.45);
 }
@@ -2881,6 +3068,7 @@ input:checked + .toggleSwitchSlider:before {
     height: 12px;
     width: 25px;
 }
+
 .mediaSVG:hover,
 .mediaURL:focus .mediaSVG,
 .mediaSVG:active {
@@ -2911,6 +3099,7 @@ input:checked + .toggleSwitchSlider:before {
     stroke: #ffffff;
     height: 15px;
 }
+
 .mediaButton:hover #settingsSVG,
 .mediaButton:focus #settingsSVG,
 .mediaButton:active #settingsSVG {
@@ -2933,6 +3122,7 @@ input:checked + .toggleSwitchSlider:before {
     line-height: 20px;
     transition: visibility 0s linear 0.25s, opacity 0.25s ease;
 }
+
 #settingsTooltip::after {
     content: " ";
     position: absolute;
@@ -2943,12 +3133,13 @@ input:checked + .toggleSwitchSlider:before {
     border-style: solid;
     border-color: transparent transparent transparent rgba(0, 0, 0, 0.75);
 }
+
 .mediaButton:hover #settingsTooltip,
 .mediaButton:focus #settingsTooltip,
 .mediaButton:active #settingsTooltip {
     visibility: visible;
     opacity: 1;
-    transition-delay:0s;
+    transition-delay: 0s;
 }
 
 /* Twitter icon colors. */
@@ -2956,6 +3147,7 @@ input:checked + .toggleSwitchSlider:before {
 #twitterURL:focus #twitterSVG {
     fill: #1da1f2;
 }
+
 #twitterSVG:active {
     fill: #1b8dd4;
 }
@@ -2966,6 +3158,7 @@ input:checked + .toggleSwitchSlider:before {
     fill: url('#instaFill')
     /*fill: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); */
 }
+
 #instagramSVG:active {
     fill: url('#instaFill')
 }
@@ -2975,6 +3168,7 @@ input:checked + .toggleSwitchSlider:before {
 #youtubeURL:focus #youtubeSVG {
     fill: #f00;
 }
+
 #youtubeSVG:active {
     fill: #ea0202;
 }
@@ -2984,6 +3178,7 @@ input:checked + .toggleSwitchSlider:before {
 #discordURL:focus #discordSVG {
     fill: #7288d9;
 }
+
 #discordSVG:active {
     fill: #657ac4;
 }
@@ -3066,6 +3261,7 @@ input:checked + .toggleSwitchSlider:before {
     box-shadow: 0px 0px 20px rgb(0, 0, 0);
     cursor: default;
 }
+
 #mojangStatusTooltip:after {
     content: " ";
     position: absolute;
@@ -3076,6 +3272,7 @@ input:checked + .toggleSwitchSlider:before {
     border-style: solid;
     border-color: rgba(0, 0, 0, 0.75) transparent transparent transparent;
 }
+
 #mojangStatusWrapper:hover #mojangStatusTooltip {
     visibility: visible;
     opacity: 1;
@@ -3144,10 +3341,12 @@ input:checked + .toggleSwitchSlider:before {
     cursor: pointer;
     outline: none;
 }
+
 #newsButton:hover #newsButtonText,
 #newsButton:focus #newsButtonText {
     text-shadow: 0px 0px 20px #fff, 0px 0px 20px #fff;
 }
+
 #newsButton:active {
     color: #c7c7c7;
     text-shadow: 0px 0px 20px #c7c7c7, 0px 0px 20px #c7c7c7;
@@ -3157,12 +3356,15 @@ input:checked + .toggleSwitchSlider:before {
 #newsButton:focus #newsButtonSVG {
     -webkit-filter: drop-shadow(0px 0px 2px #fff);
 }
+
 #newsButton:active #newsButtonSVG .arrowLine {
     stroke: #c7c7c7;
 }
+
 #newsButton:active #newsButtonSVG {
     -webkit-filter: drop-shadow(0px 0px 2px #c7c7c7);
 }
+
 #newsButton:disabled #newsButtonSVG .arrowLine {
     stroke: rgba(255, 255, 255, 0.75);
 }
@@ -3221,14 +3423,17 @@ input:checked + .toggleSwitchSlider:before {
     transition: 0.25s ease;
     outline: none;
 }
+
 #launch_button:hover,
 #launch_button:focus {
     text-shadow: 0px 0px 20px #fff, 0px 0px 20px #fff;
 }
+
 #launch_button:active {
     color: #c7c7c7;
     text-shadow: 0px 0px 20px #c7c7c7, 0px 0px 20px #c7c7c7;
 }
+
 #launch_button:disabled {
     color: #c7c7c7;
     cursor: default;
@@ -3241,7 +3446,7 @@ input:checked + .toggleSwitchSlider:before {
     top: 25px;
     display: none;
 }
- 
+
 /* Left side of launch details container, displays percentage and a divider. */
 #launch_details_left {
     display: flex;
@@ -3275,10 +3480,12 @@ input:checked + .toggleSwitchSlider:before {
     padding: 0px;
     transition: 0.25s ease;
 }
+
 #server_selection_button:hover,
 #server_selection_button:focus {
     text-shadow: 0px 0px 20px #fff, 0px 0px 20px #fff, 0px 0px 20px #fff;
 }
+
 #server_selection_button:active {
     color: #c7c7c7;
     text-shadow: 0px 0px 20px #c7c7c7, 0px 0px 20px #c7c7c7, 0px 0px 20px #c7c7c7;
@@ -3290,9 +3497,11 @@ input:checked + .toggleSwitchSlider:before {
     width: 265px;
     -webkit-appearance: none;
 }
+
 #launch_progress[value]::-webkit-progress-bar {
     background-color: transparent;
 }
+
 #launch_progress[value]::-webkit-progress-value {
     background-color: #fff;
 }
@@ -3349,11 +3558,13 @@ input:checked + .toggleSwitchSlider:before {
     color: rgba(202, 202, 202, 0.75);
     transition: 0.25s ease;
 }
+
 #overlayContent a:hover,
 #overlayContent a:focus,
 #overlayDismiss:focus {
     color: rgba(255, 255, 255, 0.75);
 }
+
 #overlayContent a:active,
 #overlayDismiss:active {
     color: rgba(165, 165, 165, 0.75);
@@ -3363,9 +3574,11 @@ input:checked + .toggleSwitchSlider:before {
 #overlayContent > *:first-child {
     margin-top: 0px !important;
 }
+
 #overlayContent > *:last-child {
     margin-bottom: 0px !important;
 }
+
 #overlayContent > * {
     margin: 8px 0px;
 }
@@ -3405,11 +3618,13 @@ input:checked + .toggleSwitchSlider:before {
     cursor: pointer;
     transition: 0.25s ease;
 }
+
 #overlayAcknowledge:hover,
 #overlayAcknowledge:focus {
     box-shadow: 0px 0px 10px 0px #fff;
     outline: none;
 }
+
 #overlayAcknowledge:active {
     border-color: rgba(255, 255, 255, 0.75);
     color: rgba(255, 255, 255, 0.75);
@@ -3426,9 +3641,11 @@ input:checked + .toggleSwitchSlider:before {
     outline: none;
     cursor: pointer;
 }
+
 #overlayDismiss:hover {
     color: rgba(255, 255, 255, 0.75);
 }
+
 #overlayDismiss:active {
     color: rgba(165, 165, 165, 0.75);
 }
@@ -3474,14 +3691,17 @@ input:checked + .toggleSwitchSlider:before {
     padding: 0px 5px;
     overflow-y: scroll;
 }
+
 #serverSelectListScrollable::-webkit-scrollbar,
 #accountSelectListScrollable::-webkit-scrollbar {
     width: 2px;
 }
+
 #serverSelectListScrollable::-webkit-scrollbar-track,
 #accountSelectListScrollable::-webkit-scrollbar-track {
     display: none;
 }
+
 #serverSelectListScrollable::-webkit-scrollbar-thumb,
 #accountSelectListScrollable::-webkit-scrollbar-thumb {
     border-radius: 10px;
@@ -3503,10 +3723,12 @@ input:checked + .toggleSwitchSlider:before {
     position: relative;
     background: rgba(131, 131, 131, 0.25);
 }
+
 .serverListing[selected] {
     cursor: default;
     opacity: 1.0;
 }
+
 .serverListing:hover,
 .serverListing:focus {
     outline: none;
@@ -3528,10 +3750,12 @@ input:checked + .toggleSwitchSlider:before {
     position: relative;
     background: rgba(0, 0, 0, 0.25);
 }
+
 .accountListing[selected] {
     cursor: default;
     opacity: 1.0;
 }
+
 .accountListing:hover,
 .accountListing:focus {
     outline: none;
@@ -3550,10 +3774,12 @@ input:checked + .toggleSwitchSlider:before {
 #accountSelectListScrollable > .accountListing:not(:first-child):not(:last-child) {
     margin: 5px 0px;
 }
+
 #serverSelectListScrollable > .serverListing:first-child,
 #accountSelectListScrollable > .accountListing:first-child {
     margin-bottom: 5px;
 }
+
 #serverSelectListScrollable > .serverListing:last-child,
 #accountSelectListScrollable > .accountListing:last-child {
     margin-top: 5px;
@@ -3626,6 +3852,7 @@ input:checked + .toggleSwitchSlider:before {
     height: 12px;
     position: relative;
 }
+
 /* Tooltip which displays when hovering over the star. */
 .serverListingStarTooltip {
     visibility: hidden;
@@ -3640,6 +3867,7 @@ input:checked + .toggleSwitchSlider:before {
     font-size: 10px;
     transition: visibility 0s linear 0.25s, opacity 0.25s ease;
 }
+
 .serverListingStarTooltip::after {
     content: " ";
     position: absolute;
@@ -3650,10 +3878,11 @@ input:checked + .toggleSwitchSlider:before {
     border-style: solid;
     border-color: transparent rgba(0, 0, 0, 0.40) transparent transparent;
 }
+
 .serverListingStarWrapper:hover .serverListingStarTooltip {
     visibility: visible;
     opacity: 1;
-    transition-delay:0s;
+    transition-delay: 0s;
 }
 
 /* Content container which contains the server select actions. */
@@ -3680,6 +3909,7 @@ input:checked + .toggleSwitchSlider:before {
     transition: 0.25s ease;
     min-height: 20.67px;
 }
+
 #serverSelectConfirm:hover,
 #serverSelectConfirm:focus,
 #accountSelectConfirm:hover,
@@ -3687,6 +3917,7 @@ input:checked + .toggleSwitchSlider:before {
     box-shadow: 0px 0px 10px 0px #fff;
     outline: none;
 }
+
 #serverSelectConfirm:active,
 #accountSelectConfirm:active {
     border-color: rgba(255, 255, 255, 0.75);
@@ -3707,12 +3938,14 @@ input:checked + .toggleSwitchSlider:before {
     outline: none;
     cursor: pointer;
 }
+
 #serverSelectCancel:hover,
 #serverSelectCancel:focus,
 #accountSelectCancel:hover,
 #accountSelectCancel:focus {
     color: rgba(255, 255, 255, 0.75);
 }
+
 #serverSelectCancel:active,
 #accountSelectCancel:active {
     color: rgba(165, 165, 165, 0.75);
