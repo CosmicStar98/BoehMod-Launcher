@@ -542,7 +542,7 @@ exports.pullRemote = function () {
         return exports.pullLocal()
     }
     return new Promise((resolve, reject) => {
-        const distroURL = 'https://raw.githubusercontent.com/JacksonPlayz/CC-Launcher/master/app/assets/distribution.json'
+        const distroURL = 'https://raw.githubusercontent.com/BoehMod/BoehMod-Launcher/master/app/assets/distribution.json'
         const opts = {
             url: distroURL,
             timeout: 2500
