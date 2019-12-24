@@ -272,7 +272,7 @@
       "downloads": {
         "artifact": {
           "path": "com/google/guava/guava/17.0/guava-17.0.jar",
-          "sha1": "89FEF81C2ADFA9B50A64ED5CD5D8C155",
+          "sha1": "9C6EF172E8DE35FD8D4D8783E4821E57CDEF7445",
           "size": 2243036,
           "url": "https://repo1.maven.org/maven2/com/google/guava/guava/17.0/guava-17.0.jar"
         }
