@@ -32,12 +32,11 @@ builder.build({
                     target: 'nsis',
                     arch: 'x64'
                 }
-            ],
-            icon: 'build/icon.ico'
+            ]
         },
         nsis: {
             oneClick: false,
-            perMachine: true,
+            perMachine: false,
             allowElevation: true,
             installerIcon: 'build/icon.ico',
             uninstallerIcon: 'build/icon.ico',
