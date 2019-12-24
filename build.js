@@ -19,7 +19,7 @@ builder.build({
     targets: (process.argv[2] != null && Platform[process.argv[2]] != null ? Platform[process.argv[2]] : getCurrentPlatform()).createTarget(),
     config: {
         appId: 'boehmodlauncher',
-        productName: 'BoehMod Launcher',
+        productName: 'BoehMod-Launcher',
         artifactName: '${productName}-setup.${ext}',
         copyright: 'Copyright © 2019 BoehMod',
         directories: {
