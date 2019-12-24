@@ -541,8 +541,13 @@ class ProcessBuilder {
         }
 
         // Mod List File Argument
-        mcArgs.push('--modListFile')
-        mcArgs.push('absolute:' + this.fmlDir)
+        if(Util.mcVersionAtLeast('1.12', this.server.getMinecraftVersion())) {
+            mcArgs.push('--modListFile')
+            mcArgs.push('absolute:' + this.fmlDir)
+        }
+
+        mcArgs.push('--user_properties')
+        mcArgs.push('{}')
 
         // LiteLoader
         if(this.usingLiteLoader){

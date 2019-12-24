@@ -187,7 +187,7 @@ class JavaGuard extends EventEmitter {
 
     // /**
     //  * Resolves the latest version of Oracle's JRE and parses its download link.
-    //  * 
+    //  *
     //  * @returns {Promise.<OracleJREData>} Promise which resolved to an object containing the JRE download data.
     //  */
     // static _latestJREOracle(){
@@ -1165,8 +1165,12 @@ class AssetGuard extends EventEmitter {
 
                     for(let v of manifest.versions){
                         if (v.id === version) {
-                            // resolve('https://raw.githubusercontent.com/JacksonPlayz/CC-Launcher/master/app/assets/1.7.10.json')
-                            resolve(v.url)
+                            if(v.id === '1.7.10') {
+                                resolve('https://raw.githubusercontent.com/boehmod/BoehMod-Launcher/master/app/assets/1.7.10.json')
+                            }
+                            else {
+                                resolve(v.url)
+                            }
                         }
                     }
 

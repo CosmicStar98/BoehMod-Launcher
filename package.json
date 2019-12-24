@@ -7,7 +7,7 @@
   "license": "UNLICENSED",
   "homepage": "https://boehmod.com",
   "bugs": {
-    "url": "https://github.com/dscalzi/ElectronLauncher/issues"
+    "url": "https://github.com/boehmod/BoehMod-Launcher/issues"
   },
   "private": true,
   "main": "index.js",

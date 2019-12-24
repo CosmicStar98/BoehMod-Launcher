@@ -392,7 +392,7 @@
               "artifact": {
                 "size": 2243036,
                 "MD5": "89FEF81C2ADFA9B50A64ED5CD5D8C155",
-                "url": "http://www.boehmod.com/download/launcher/1.7.10/guava-17.0.jar"
+                "url": "https://repo1.maven.org/maven2/com/google/guava/guava/17.0/guava-17.0.jar"
               }
             },
             {
