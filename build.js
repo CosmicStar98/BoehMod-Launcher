@@ -20,7 +20,7 @@ builder.build({
     config: {
         appId: 'boehmodlauncher',
         productName: 'BoehMod Launcher',
-        artifactName: '${productName}-${version}.${ext}',
+        artifactName: '${productName}-setup.${ext}',
         copyright: 'Copyright © 2019 BoehMod',
         directories: {
             buildResources: 'build',
