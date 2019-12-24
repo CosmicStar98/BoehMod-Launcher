@@ -47,9 +47,9 @@ if (!isDev) {
                 break
             case 'update-available':
                 loggerAutoUpdaterSuccess.log('New update available', info.version)
-                
+
                 if(process.platform === 'darwin'){
-                    info.darwindownload = `https://github.com/BoehMod/LauncherRelease/releases/download/v${info.version}/BoehModLauncher-${info.version}.dmg`
+                    info.darwindownload = `https://github.com/BoehMod/LauncherRelease/releases/download/v${info.version}/BoehModLauncher-setup.dmg`
                     showUpdateUI(info)
                 }
                 populateSettingsUpdateInformation(info)
