@@ -10,10 +10,10 @@
       "name": "CounterCraft",
       "description": "Official CounterCraft Matchmaking & Cloud",
       "icon": "https://www.mccountercraft.net/img/cclogosquare.png",
-      "version": "1.5.7a",
+      "version": "1.6.4a",
       "address": "www.mccountercraft.net",
       "minecraftVersion": "1.6.4",
-      "mainServer": true,
+      "mainServer": false,
       "autoconnect": false,
       "modules": [
         {
@@ -219,17 +219,17 @@
           ]
         },
         {
-          "id": "com.ferullogaming:countercraft:1.5.7a",
+          "id": "com.ferullogaming:countercraft:1.6.4a",
           "name": "CounterCraft Mod Jar",
           "type": "File",
           "required": {
             "value": true
           },
           "artifact": {
-            "size": 38276829,
-            "MD5": "74817C311CA58419734B3F926FE61447",
+            "size": 43952285,
+            "MD5": "09E27D55E06E472C95C4FD6CCAD88ECB",
             "path": "mods/CounterCraft.jar",
-            "url": "https://github.com/ScottehBoeh/CounterCraftRelease/releases/download/1.5.7a/CounterCraft.jar"
+            "url": "https://github.com/boehmod/CounterCraftRelease/releases/download/1.6.4a/CounterCraft.jar"
           }
         }
       ]
@@ -238,11 +238,11 @@
       "id": "deci",
       "name": "Decimation",
       "description": "Official Decimation Modpack",
-      "icon": "https://cdn.discordapp.com/emojis/604026546025660436.png?v=1",
-      "version": "1.18.8f",
+      "icon": "https://i.imgur.com/GrSF9T9.jpg",
+      "version": "1.20.6f",
       "address": "www.mcdecimation.net",
       "minecraftVersion": "1.7.10",
-      "mainServer": false,
+      "mainServer": true,
       "autoconnect": false,
       "modules": [
         {
@@ -428,17 +428,17 @@
           ]
         },
         {
-          "id": "net.mcdecimation:Decimation:1.18.8f",
+          "id": "net.mcdecimation:Decimation:1.20.6f",
           "name": "Decimation Mod Jar",
           "type": "File",
           "required": {
             "value": true
           },
           "artifact": {
-            "size": 149465839,
-            "MD5": "7F108EB88B048D955B77B93845F65018",
+            "size": 149477730,
+            "MD5": "6EABFA9A7F62A3B8D79BA8154B519243",
             "path": "mods/Decimation.jar",
-            "url": "https://github.com/ScottehBoeh/DecimationRelease/releases/download/1.18.8/Decimation.jar"
+            "url": "https://github.com/ScottehBoeh/DecimationRelease/releases/download/1.20.6/Decimation.jar"
           }
         }
       ]
