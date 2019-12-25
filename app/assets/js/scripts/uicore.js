@@ -49,7 +49,7 @@ if (!isDev) {
                 loggerAutoUpdaterSuccess.log('New update available', info.version)
 
                 if(process.platform === 'darwin'){
-                    info.darwindownload = `https://github.com/BoehMod/LauncherRelease/releases/download/v${info.version}/BoehModLauncher-setup.dmg`
+                    info.darwindownload = `https://github.com/boehmod/LauncherRelease/releases/download/v${info.version}/BoehMod-Launcher-setup.dmg`
                     showUpdateUI(info)
                 }
                 populateSettingsUpdateInformation(info)
