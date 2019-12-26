@@ -1,3 +1,5 @@
+## If you are looking to download this launcher, please redirect to the [Launcher Release repository](https://github.com/BoehMod/LauncherRelease/releases) or the [official BoehMod Launcher page](https://boehmod.com/launcher). This is the repository hosting the code for the launcher.
+
 ![Launcher Logo](https://www.boehmod.com/img/loading/launcher-logo.png)
 ![Screenshot 1](https://i.imgur.com/mxoYNzZ.png)
 
