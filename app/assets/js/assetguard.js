@@ -1165,12 +1165,7 @@ class AssetGuard extends EventEmitter {
 
                     for(let v of manifest.versions){
                         if (v.id === version) {
-                            if(v.id === '1.7.10') {
-                                resolve('https://raw.githubusercontent.com/boehmod/BoehMod-Launcher/master/app/assets/1.7.10.json')
-                            }
-                            else {
-                                resolve(v.url)
-                            }
+                             resolve(v.url)
                         }
                     }
 
